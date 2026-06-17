@@ -1,0 +1,4 @@
+variant,label,top_module,wires,wire bits,public wires,public wire bits,memories,memory bits,processes,cells,and_cells,dff_cells,mux_cells,not_cells,or_cells,xor_cells,warnings,check_problems,abc_delay_estimate,log
+single_cycle,Single-cycle,top_single_cycle,15965,26129,371,10504,,,,25143,531,9216,8381,3426,3307,282,1,0,,reports/synth/single_cycle_yosys.log
+pipeline,"Pipeline, no prediction",top_pipeline,28098,52053,1119,23488,,,,39037,7383,10761,256,12208,7298,1131,28,0,,reports/synth/pipeline_yosys.log
+pipeline_gshare,"Pipeline, gshare",top_pipeline_gshare,28146,52200,1123,23591,,,,39082,7402,10762,287,12206,7294,1131,28,0,,reports/synth/pipeline_gshare_yosys.log

@@ -1,0 +1,16 @@
+metric,value
+accepted,20
+immediate_ready,13
+wait_src1,6
+wait_src2,2
+wakeups,8
+broadcasts,19
+dependencies,7
+full_stalls,1
+thread0_accepted,15
+thread1_accepted,5
+thread0_wakeups,7
+thread1_wakeups,1
+checks,49
+errors,0
+pass,PASS

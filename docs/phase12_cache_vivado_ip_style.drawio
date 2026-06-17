@@ -1,0 +1,113 @@
+<mxfile host="app.diagrams.net" modified="2026-05-28T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="vivadoIpStyleCache" name="Vivado IP Style Cache Pins">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="Phase 12 Cache Hierarchy - Vivado IP Integrator Style Pin Connections" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="1300" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="core" value="rv32i_pipeline_core" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9eaf7;strokeColor=#2f75b5;strokeWidth=2;fontStyle=1;fontSize=16" vertex="1" parent="1">
+          <mxGeometry x="80" y="170" width="360" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="dcache" value="u_dmem&#xa;direct_mapped_dcache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#38761d;strokeWidth=2;fontStyle=1;fontSize=16" vertex="1" parent="1">
+          <mxGeometry x="790" y="150" width="400" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="L1 arrays&#xa;valid/tag/data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#bf9000;strokeWidth=2;fontStyle=1;fontSize=15" vertex="1" parent="1">
+          <mxGeometry x="1540" y="160" width="360" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="L2 arrays&#xa;l2_valid/l2_tag/l2_data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#e69138;strokeWidth=2;fontStyle=1;fontSize=15" vertex="1" parent="1">
+          <mxGeometry x="1540" y="520" width="360" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mem" value="Backing memory&#xa;mem[word_addr]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f4cccc;strokeColor=#cc0000;strokeWidth=2;fontStyle=1;fontSize=15" vertex="1" parent="1">
+          <mxGeometry x="1540" y="910" width="360" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tb" value="tb_rv32i_pipeline_cache_hierarchy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;strokeWidth=2;fontStyle=1;fontSize=15" vertex="1" parent="1">
+          <mxGeometry x="80" y="1060" width="1110" height="190" as="geometry" />
+        </mxCell>
+
+        <!-- Core right pins -->
+        <mxCell id="core_p_clk" value="clk" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;fontColor=#000000;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="230" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_rst" value="rst_n" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="260" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_valid" value="ex_mem_memory_access" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="310" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_load" value="ex_mem_is_load" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="345" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_store" value="ex_mem_is_store" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="380" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_addr" value="ex_mem_alu_y[31:0]" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="415" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_wdata" value="ex_mem_rs2_data[31:0]" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#2f75b5;strokeColor=#2f75b5;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="450" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="core_p_rdata" value="mem_dmem_rdata[31:0]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#674ea7;strokeColor=#674ea7;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="530" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="core_p_stall" value="dcache_stall" style="ellipse;whiteSpace=wrap;html=1;fillColor=#cc0000;strokeColor=#cc0000;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="570" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="core_p_trace" value="trace/perf output ports" style="ellipse;whiteSpace=wrap;html=1;fillColor=#674ea7;strokeColor=#674ea7;align=left;labelPosition=left;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="430" y="710" width="16" height="16" as="geometry" /></mxCell>
+
+        <!-- Dcache left pins -->
+        <mxCell id="dc_l_clk" value=".clk" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="230" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_rst" value=".rst_n" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="260" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_valid" value=".req_valid" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="310" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_load" value=".req_load" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="345" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_store" value=".req_store" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="380" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_addr" value=".addr[31:0]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="415" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_wdata" value=".wdata[31:0]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="450" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="dc_l_rdata" value=".rdata[31:0]" style="shape=triangle;direction=west;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#674ea7;strokeColor=#674ea7;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="530" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_l_stall" value=".stall" style="shape=triangle;direction=west;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#cc0000;strokeColor=#cc0000;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="570" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_l_trace" value="trace/perf ports" style="shape=triangle;direction=west;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#674ea7;strokeColor=#674ea7;align=right;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle" vertex="1" parent="1"><mxGeometry x="780" y="710" width="20" height="14" as="geometry" /></mxCell>
+
+        <!-- Dcache right pins / internal nets -->
+        <mxCell id="dc_r_l1_idx" value="index" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="220" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_l1_tag" value="req_tag" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="255" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_l1_we" value="valid/tag/data write enables" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="290" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_l2_idx" value="l2_index" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="570" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_l2_tag" value="l2_req_tag" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="610" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_l2_we" value="l2_valid/tag/data write enables" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="650" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_mem_addr" value="word_addr" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="980" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="dc_r_mem_we" value="mem read/write controls" style="shape=triangle;direction=east;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#38761d;strokeColor=#38761d;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="1020" width="20" height="14" as="geometry" /></mxCell>
+
+        <!-- Array pins -->
+        <mxCell id="l1_p_idx" value="index" style="ellipse;whiteSpace=wrap;html=1;fillColor=#bf9000;strokeColor=#bf9000;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="220" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="l1_p_tag" value="req_tag" style="ellipse;whiteSpace=wrap;html=1;fillColor=#bf9000;strokeColor=#bf9000;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="255" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="l1_p_we" value="valid/tag/data wr" style="ellipse;whiteSpace=wrap;html=1;fillColor=#bf9000;strokeColor=#bf9000;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="290" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="l1_p_hit" value="line_hit" style="shape=triangle;direction=west;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#bf9000;strokeColor=#bf9000;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="345" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="l2_p_idx" value="l2_index" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e69138;strokeColor=#e69138;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="570" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="l2_p_tag" value="l2_req_tag" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e69138;strokeColor=#e69138;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="610" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="l2_p_we" value="l2 valid/tag/data wr" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e69138;strokeColor=#e69138;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="650" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="l2_p_hit" value="l2_line_hit" style="shape=triangle;direction=west;perimeter=trianglePerimeter;whiteSpace=wrap;html=1;fillColor=#e69138;strokeColor=#e69138;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="730" width="20" height="14" as="geometry" /></mxCell>
+        <mxCell id="mem_p_addr" value="word_addr" style="ellipse;whiteSpace=wrap;html=1;fillColor=#cc0000;strokeColor=#cc0000;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="980" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="mem_p_rw" value="mem rd/wr" style="ellipse;whiteSpace=wrap;html=1;fillColor=#cc0000;strokeColor=#cc0000;align=right;labelPosition=right" vertex="1" parent="1"><mxGeometry x="1530" y="1020" width="16" height="16" as="geometry" /></mxCell>
+
+        <!-- Core to DCache connections -->
+        <mxCell id="n_clk" value="clk" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666" edge="1" parent="1" source="core_p_clk" target="dc_l_clk"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_rst" value="rst_n" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666" edge="1" parent="1" source="core_p_rst" target="dc_l_rst"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_valid" value="ex_mem_memory_access" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2f75b5;strokeWidth=2" edge="1" parent="1" source="core_p_valid" target="dc_l_valid"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_load" value="ex_mem_is_load" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2f75b5;strokeWidth=2" edge="1" parent="1" source="core_p_load" target="dc_l_load"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_store" value="ex_mem_is_store" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2f75b5;strokeWidth=2" edge="1" parent="1" source="core_p_store" target="dc_l_store"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_addr" value="ex_mem_alu_y[31:0]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2f75b5;strokeWidth=2" edge="1" parent="1" source="core_p_addr" target="dc_l_addr"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_wdata" value="ex_mem_rs2_data[31:0]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#2f75b5;strokeWidth=2" edge="1" parent="1" source="core_p_wdata" target="dc_l_wdata"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_rdata" value="mem_dmem_rdata[31:0]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#674ea7;strokeWidth=2" edge="1" parent="1" source="dc_l_rdata" target="core_p_rdata"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_stall" value="dcache_stall" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#cc0000;strokeWidth=2" edge="1" parent="1" source="dc_l_stall" target="core_p_stall"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_trace" value="trace_* / perf_*" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#674ea7;strokeWidth=2" edge="1" parent="1" source="dc_l_trace" target="core_p_trace"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Internal pin connections -->
+        <mxCell id="n_l1_idx" value="index = addr[2 +: L1_INDEX_BITS]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#bf9000;strokeWidth=2" edge="1" parent="1" source="dc_r_l1_idx" target="l1_p_idx"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_l1_tag" value="req_tag = addr[31 -: L1_TAG_BITS]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#bf9000;strokeWidth=2" edge="1" parent="1" source="dc_r_l1_tag" target="l1_p_tag"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_l1_we" value="fill/store update: valid[index], tag[index], data[index]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#bf9000;strokeWidth=2" edge="1" parent="1" source="dc_r_l1_we" target="l1_p_we"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_l1_hit" value="line_hit" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#bf9000;strokeWidth=2" edge="1" parent="1" source="l1_p_hit" target="dcache"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1450" y="352" /><mxPoint x="1450" y="120" /><mxPoint x="930" y="120" /></Array></mxGeometry></mxCell>
+        <mxCell id="n_l2_idx" value="l2_index = addr[2 +: L2_INDEX_BITS]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#e69138;strokeWidth=2" edge="1" parent="1" source="dc_r_l2_idx" target="l2_p_idx"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_l2_tag" value="l2_req_tag = addr[31 -: L2_TAG_BITS]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#e69138;strokeWidth=2" edge="1" parent="1" source="dc_r_l2_tag" target="l2_p_tag"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_l2_we" value="L2 fill/store update: l2_valid/l2_tag/l2_data" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#e69138;strokeWidth=2" edge="1" parent="1" source="dc_r_l2_we" target="l2_p_we"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_l2_hit" value="l2_line_hit" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#e69138;strokeWidth=2" edge="1" parent="1" source="l2_p_hit" target="dcache"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1430" y="737" /><mxPoint x="1430" y="860" /><mxPoint x="990" y="860" /></Array></mxGeometry></mxCell>
+        <mxCell id="n_mem_addr" value="word_addr = {2'b00, addr[31:2]}" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#cc0000;strokeWidth=2" edge="1" parent="1" source="dc_r_mem_addr" target="mem_p_addr"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="n_mem_rw" value="read/write mem[word_addr]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#cc0000;strokeWidth=2" edge="1" parent="1" source="dc_r_mem_we" target="mem_p_rw"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Testbench pins and connections -->
+        <mxCell id="tb_p_ports" value="reads trace/perf ports" style="ellipse;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="430" y="1090" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="tb_p_mem" value="dut.u_dmem.mem[]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#666666;align=left;labelPosition=left" vertex="1" parent="1"><mxGeometry x="1180" y="1160" width="16" height="16" as="geometry" /></mxCell>
+        <mxCell id="n_tb_ports" value="top-level trace/perf sampled by TB" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#666666" edge="1" parent="1" source="core_p_trace" target="tb_p_ports"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="500" y="718" /><mxPoint x="500" y="1098" /></Array></mxGeometry></mxCell>
+        <mxCell id="n_tb_mem" value="hierarchical preload/check: dut.u_dmem.mem[index]" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#666666" edge="1" parent="1" source="tb_p_mem" target="mem"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1450" y="1168" /><mxPoint x="1450" y="1015" /></Array></mxGeometry></mxCell>
+
+        <mxCell id="legend" value="Legend&#xa;blue: core request nets&#xa;purple: response/debug nets&#xa;red: stall/memory nets&#xa;yellow/orange: L1/L2 internal array nets&#xa;dashed: testbench hierarchical/debug access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="1540" y="1180" width="520" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

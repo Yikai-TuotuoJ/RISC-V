@@ -1,0 +1,95 @@
+LSQ_ALLOC: cycle=27 entry=0 type= LOAD rob=R0
+LOAD_EXEC: cycle=28 entry=0 rob=R0 addr=00000100 data=11111111
+ROB_WAIT: cycle=28 reason=head_not_committable
+ROB_COMMIT: cycle=29 rob=R0 rd=x5 data=11111111 store=0
+LSQ_ALLOC: cycle=31 entry=0 type=STORE rob=R1
+STORE_COMMIT: cycle=32 entry=0 rob=R1 addr=00000104 data=0000002a
+ROB_COMMIT: cycle=32 rob=R1 rd=x0 data=0000002a store=1
+LSQ_ALLOC: cycle=34 entry=0 type= LOAD rob=R2
+LOAD_EXEC: cycle=35 entry=0 rob=R2 addr=00000104 data=0000002a
+ROB_WAIT: cycle=35 reason=head_not_committable
+ROB_COMMIT: cycle=36 rob=R2 rd=x6 data=0000002a store=0
+LSQ_ALLOC: cycle=40 entry=0 type= LOAD rob=R3
+ROB_WAIT: cycle=41 reason=head_not_committable
+ROB_WAIT: cycle=42 reason=head_not_committable
+ROB_WAIT: cycle=43 reason=head_not_committable
+ROB_WAIT: cycle=44 reason=head_not_committable
+ROB_WAIT: cycle=45 reason=head_not_committable
+ROB_WAIT: cycle=46 reason=head_not_committable
+ADDR_READY: cycle=47 entry=0 addr=00000108
+ROB_WAIT: cycle=47 reason=head_not_committable
+LOAD_EXEC: cycle=48 entry=0 rob=R3 addr=00000108 data=33333333
+ROB_WAIT: cycle=48 reason=head_not_committable
+ROB_COMMIT: cycle=49 rob=R3 rd=x7 data=33333333 store=0
+LSQ_ALLOC: cycle=53 entry=0 type=STORE rob=R4
+ROB_WAIT: cycle=54 reason=head_not_committable
+ROB_WAIT: cycle=55 reason=head_not_committable
+ROB_WAIT: cycle=56 reason=head_not_committable
+ROB_WAIT: cycle=57 reason=head_not_committable
+ROB_WAIT: cycle=58 reason=head_not_committable
+ROB_WAIT: cycle=59 reason=head_not_committable
+ROB_WAIT: cycle=60 reason=head_not_committable
+ROB_WAIT: cycle=61 reason=head_not_committable
+ROB_WAIT: cycle=62 reason=head_not_committable
+STORE_DATA_READY: cycle=63 entry=0 data=00000055
+ROB_WAIT: cycle=63 reason=head_not_committable
+STORE_COMMIT: cycle=64 entry=0 rob=R4 addr=0000010c data=00000055
+ROB_COMMIT: cycle=64 rob=R4 rd=x0 data=00000055 store=1
+LSQ_ALLOC: cycle=68 entry=0 type=STORE rob=R5
+ROB_WAIT: cycle=69 reason=head_not_committable
+LSQ_ALLOC: cycle=70 entry=1 type= LOAD rob=R6
+ROB_WAIT: cycle=70 reason=head_not_committable
+LOAD_WAIT: cycle=71 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=71 reason=head_not_committable
+LOAD_WAIT: cycle=72 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=72 reason=head_not_committable
+LOAD_WAIT: cycle=73 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=73 reason=head_not_committable
+LOAD_WAIT: cycle=74 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=74 reason=head_not_committable
+LOAD_WAIT: cycle=75 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=75 reason=head_not_committable
+LOAD_WAIT: cycle=76 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=76 reason=head_not_committable
+STORE_DATA_READY: cycle=77 entry=0 data=00000abc
+LOAD_WAIT: cycle=77 entry=1 reason=older_unresolved_store
+ROB_WAIT: cycle=77 reason=head_not_committable
+LOAD_WAIT: cycle=78 entry=1 reason=older_unresolved_store
+STORE_COMMIT: cycle=78 entry=0 rob=R5 addr=00000110 data=00000abc
+ROB_COMMIT: cycle=78 rob=R5 rd=x0 data=00000abc store=1
+LOAD_EXEC: cycle=79 entry=1 rob=R6 addr=00000110 data=00000abc
+ROB_WAIT: cycle=79 reason=head_not_committable
+ROB_COMMIT: cycle=80 rob=R6 rd=x8 data=00000abc store=0
+LSQ_ALLOC: cycle=84 entry=0 type=STORE rob=R7
+ROB_WAIT: cycle=85 reason=head_not_committable
+LSQ_ALLOC: cycle=86 entry=1 type=STORE rob=R0
+ROB_WAIT: cycle=86 reason=head_not_committable
+ROB_WAIT: cycle=87 reason=head_not_committable
+LSQ_ALLOC: cycle=88 entry=2 type=STORE rob=R1
+ROB_WAIT: cycle=88 reason=head_not_committable
+ROB_WAIT: cycle=89 reason=head_not_committable
+LSQ_ALLOC: cycle=90 entry=3 type=STORE rob=R2
+ROB_WAIT: cycle=90 reason=head_not_committable
+ROB_WAIT: cycle=91 reason=head_not_committable
+ROB_WAIT: cycle=92 reason=head_not_committable
+ROB_WAIT: cycle=93 reason=head_not_committable
+ROB_WAIT: cycle=94 reason=head_not_committable
+ROB_WAIT: cycle=95 reason=head_not_committable
+ADDR_READY: cycle=96 entry=3 addr=0000012c
+ROB_WAIT: cycle=96 reason=head_not_committable
+STORE_COMMIT: cycle=97 entry=0 rob=R7 addr=00000120 data=0000002a
+ROB_COMMIT: cycle=97 rob=R7 rd=x0 data=0000002a store=1
+STORE_COMMIT: cycle=98 entry=1 rob=R0 addr=00000124 data=0000002a
+ROB_COMMIT: cycle=98 rob=R0 rd=x0 data=0000002a store=1
+STORE_COMMIT: cycle=99 entry=2 rob=R1 addr=00000128 data=0000002a
+ROB_COMMIT: cycle=99 rob=R1 rd=x0 data=0000002a store=1
+STORE_COMMIT: cycle=100 entry=3 rob=R2 addr=0000012c data=0000002a
+ROB_COMMIT: cycle=100 rob=R2 rd=x0 data=0000002a store=1
+LSQ_ALLOC: cycle=102 entry=0 type= LOAD rob=R3
+LOAD_EXEC: cycle=103 entry=0 rob=R3 addr=00000100 data=11111111
+ROB_WAIT: cycle=103 reason=head_not_committable
+ROB_COMMIT: cycle=104 rob=R3 rd=x9 data=11111111 store=0
+ROB_COMMIT: cycle=107 rob=R4 rd=x20 data=00000007 store=0
+ROB_COMMIT: cycle=110 rob=R5 rd=x21 data=00000031 store=0
+ROB_COMMIT: cycle=113 rob=R6 rd=x22 data=00000007 store=0
+ROB_COMMIT: cycle=116 rob=R7 rd=x0 data=0000007b store=0

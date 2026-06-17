@@ -1,0 +1,140 @@
+DISPATCH: cycle=12 rob=R0 rs=0 tid=0 op=0 rd=x5
+ISSUE: cycle=13 rs=0 rob=R0 reason=ready
+COMMIT_STALL: cycle=13 head=R0 reason=head_not_ready
+COMMIT_STALL: cycle=14 head=R0 reason=head_not_ready
+CDB: cycle=15 rob=R0 rd=x5 data=0000000c wake_sources=0
+COMMIT_STALL: cycle=15 head=R0 reason=head_not_ready
+COMMIT: cycle=16 rob=R0 rd=x5 data=0000000c
+DISPATCH: cycle=17 rob=R1 rs=0 tid=0 op=1 rd=x6
+ISSUE: cycle=18 rs=0 rob=R1 reason=ready
+COMMIT_STALL: cycle=18 head=R1 reason=head_not_ready
+COMMIT_STALL: cycle=19 head=R1 reason=head_not_ready
+CDB: cycle=20 rob=R1 rd=x6 data=00000002 wake_sources=0
+COMMIT_STALL: cycle=20 head=R1 reason=head_not_ready
+COMMIT: cycle=21 rob=R1 rd=x6 data=00000002
+DISPATCH: cycle=22 rob=R2 rs=0 tid=0 op=2 rd=x7
+ISSUE: cycle=23 rs=0 rob=R2 reason=ready
+COMMIT_STALL: cycle=23 head=R2 reason=head_not_ready
+COMMIT_STALL: cycle=24 head=R2 reason=head_not_ready
+CDB: cycle=25 rob=R2 rd=x7 data=000000f0 wake_sources=0
+COMMIT_STALL: cycle=25 head=R2 reason=head_not_ready
+COMMIT: cycle=26 rob=R2 rd=x7 data=000000f0
+DISPATCH: cycle=27 rob=R3 rs=0 tid=0 op=3 rd=x8
+ISSUE: cycle=28 rs=0 rob=R3 reason=ready
+COMMIT_STALL: cycle=28 head=R3 reason=head_not_ready
+COMMIT_STALL: cycle=29 head=R3 reason=head_not_ready
+CDB: cycle=30 rob=R3 rd=x8 data=0000fff0 wake_sources=0
+COMMIT_STALL: cycle=30 head=R3 reason=head_not_ready
+COMMIT: cycle=31 rob=R3 rd=x8 data=0000fff0
+DISPATCH: cycle=32 rob=R0 rs=0 tid=0 op=4 rd=x9
+ISSUE: cycle=33 rs=0 rob=R0 reason=ready
+COMMIT_STALL: cycle=33 head=R0 reason=head_not_ready
+COMMIT_STALL: cycle=34 head=R0 reason=head_not_ready
+CDB: cycle=35 rob=R0 rd=x9 data=0000ff00 wake_sources=0
+COMMIT_STALL: cycle=35 head=R0 reason=head_not_ready
+COMMIT: cycle=36 rob=R0 rd=x9 data=0000ff00
+DISPATCH: cycle=37 rob=R1 rs=0 tid=0 op=5 rd=x10
+ISSUE: cycle=38 rs=0 rob=R1 reason=ready
+COMMIT_STALL: cycle=38 head=R1 reason=head_not_ready
+COMMIT_STALL: cycle=39 head=R1 reason=head_not_ready
+CDB: cycle=40 rob=R1 rd=x10 data=0000000e wake_sources=0
+COMMIT_STALL: cycle=40 head=R1 reason=head_not_ready
+COMMIT: cycle=41 rob=R1 rd=x10 data=0000000e
+DISPATCH: cycle=42 rob=R2 rs=0 tid=0 op=5 rd=x0
+ISSUE: cycle=43 rs=0 rob=R2 reason=ready
+COMMIT_STALL: cycle=43 head=R2 reason=head_not_ready
+COMMIT_STALL: cycle=44 head=R2 reason=head_not_ready
+CDB: cycle=45 rob=R2 rd=x0 data=00000068 wake_sources=0
+COMMIT_STALL: cycle=45 head=R2 reason=head_not_ready
+COMMIT: cycle=46 rob=R2 rd=x0 data=00000068
+DISPATCH: cycle=48 rob=R3 rs=0 tid=0 op=0 rd=x11
+DISPATCH: cycle=49 rob=R0 rs=1 tid=0 op=5 rd=x12
+COMMIT_STALL: cycle=49 head=R3 reason=head_not_ready
+ISSUE: cycle=50 rs=1 rob=R0 reason=ready
+COMMIT_STALL: cycle=50 head=R3 reason=head_not_ready
+COMMIT_STALL: cycle=51 head=R3 reason=head_not_ready
+CDB: cycle=52 rob=R0 rd=x12 data=0000001a wake_sources=0
+COMMIT_STALL: cycle=52 head=R3 reason=head_not_ready
+CDB: cycle=53 rob=R2 rd=x20 data=00000003 wake_sources=1
+COMMIT_STALL: cycle=53 head=R3 reason=head_not_ready
+ISSUE: cycle=54 rs=0 rob=R3 reason=ready
+COMMIT_STALL: cycle=54 head=R3 reason=head_not_ready
+COMMIT_STALL: cycle=55 head=R3 reason=head_not_ready
+CDB: cycle=56 rob=R3 rd=x11 data=00000008 wake_sources=0
+COMMIT_STALL: cycle=56 head=R3 reason=head_not_ready
+COMMIT: cycle=57 rob=R3 rd=x11 data=00000008
+COMMIT: cycle=58 rob=R0 rd=x12 data=0000001a
+DISPATCH: cycle=59 rob=R1 rs=0 tid=0 op=5 rd=x14
+DISPATCH: cycle=60 rob=R2 rs=1 tid=0 op=5 rd=x14
+ISSUE: cycle=60 rs=0 rob=R1 reason=ready
+COMMIT_STALL: cycle=60 head=R1 reason=head_not_ready
+COMMIT_STALL: cycle=61 head=R1 reason=head_not_ready
+CDB: cycle=62 rob=R1 rd=x14 data=00000006 wake_sources=0
+COMMIT_STALL: cycle=62 head=R1 reason=head_not_ready
+ISSUE: cycle=63 rs=1 rob=R2 reason=ready
+COMMIT: cycle=63 rob=R1 rd=x14 data=00000006
+COMMIT_STALL: cycle=64 head=R2 reason=head_not_ready
+CDB: cycle=65 rob=R2 rd=x14 data=00000007 wake_sources=0
+COMMIT_STALL: cycle=65 head=R2 reason=head_not_ready
+COMMIT: cycle=66 rob=R2 rd=x14 data=00000007
+DISPATCH: cycle=67 rob=R3 rs=0 tid=1 op=0 rd=x5
+ISSUE: cycle=68 rs=0 rob=R3 reason=ready
+COMMIT_STALL: cycle=68 head=R3 reason=head_not_ready
+COMMIT_STALL: cycle=69 head=R3 reason=head_not_ready
+CDB: cycle=70 rob=R3 rd=x5 data=00000016 wake_sources=0
+COMMIT_STALL: cycle=70 head=R3 reason=head_not_ready
+COMMIT: cycle=71 rob=R3 rd=x5 data=00000016
+DISPATCH: cycle=72 rob=R0 rs=0 tid=0 op=5 rd=x16
+DISPATCH: cycle=73 rob=R1 rs=1 tid=0 op=5 rd=x17
+ISSUE: cycle=73 rs=0 rob=R0 reason=ready
+COMMIT_STALL: cycle=73 head=R0 reason=head_not_ready
+DISPATCH: cycle=74 rob=R2 rs=2 tid=0 op=5 rd=x18
+COMMIT_STALL: cycle=74 head=R0 reason=head_not_ready
+DISPATCH: cycle=75 rob=R3 rs=3 tid=0 op=5 rd=x19
+CDB: cycle=75 rob=R0 rd=x16 data=00000001 wake_sources=0
+COMMIT_STALL: cycle=75 head=R0 reason=head_not_ready
+ISSUE: cycle=76 rs=1 rob=R1 reason=ready
+COMMIT: cycle=76 rob=R0 rd=x16 data=00000001
+COMMIT_STALL: cycle=77 head=R1 reason=head_not_ready
+CDB: cycle=78 rob=R1 rd=x17 data=00000002 wake_sources=0
+COMMIT_STALL: cycle=78 head=R1 reason=head_not_ready
+ISSUE: cycle=79 rs=2 rob=R2 reason=ready
+COMMIT: cycle=79 rob=R1 rd=x17 data=00000002
+COMMIT_STALL: cycle=80 head=R2 reason=head_not_ready
+CDB: cycle=81 rob=R2 rd=x18 data=00000003 wake_sources=0
+COMMIT_STALL: cycle=81 head=R2 reason=head_not_ready
+ISSUE: cycle=82 rs=3 rob=R3 reason=ready
+COMMIT: cycle=82 rob=R2 rd=x18 data=00000003
+COMMIT_STALL: cycle=83 head=R3 reason=head_not_ready
+CDB: cycle=84 rob=R3 rd=x19 data=00000004 wake_sources=0
+COMMIT_STALL: cycle=84 head=R3 reason=head_not_ready
+COMMIT: cycle=85 rob=R3 rd=x19 data=00000004
+DISPATCH: cycle=86 rob=R0 rs=0 tid=0 op=5 rd=x21
+ISSUE: cycle=87 rs=0 rob=R0 reason=ready
+COMMIT_STALL: cycle=87 head=R0 reason=head_not_ready
+COMMIT_STALL: cycle=88 head=R0 reason=head_not_ready
+CDB: cycle=89 rob=R0 rd=x21 data=00000037 wake_sources=0
+COMMIT_STALL: cycle=89 head=R0 reason=head_not_ready
+COMMIT: cycle=90 rob=R0 rd=x21 data=00000037
+DISPATCH: cycle=91 rob=R1 rs=0 tid=0 op=5 rd=x22
+ISSUE: cycle=92 rs=0 rob=R1 reason=ready
+COMMIT_STALL: cycle=92 head=R1 reason=head_not_ready
+COMMIT_STALL: cycle=93 head=R1 reason=head_not_ready
+CDB: cycle=94 rob=R1 rd=x22 data=00000042 wake_sources=0
+COMMIT_STALL: cycle=94 head=R1 reason=head_not_ready
+COMMIT: cycle=95 rob=R1 rd=x22 data=00000042
+DISPATCH: cycle=96 rob=R2 rs=0 tid=0 op=5 rd=x23
+ISSUE: cycle=97 rs=0 rob=R2 reason=ready
+COMMIT_STALL: cycle=97 head=R2 reason=head_not_ready
+COMMIT_STALL: cycle=98 head=R2 reason=head_not_ready
+CDB: cycle=99 rob=R2 rd=x23 data=0000004d wake_sources=0
+COMMIT_STALL: cycle=99 head=R2 reason=head_not_ready
+COMMIT: cycle=100 rob=R2 rd=x23 data=0000004d
+DISPATCH: cycle=101 rob=R3 rs=0 tid=0 op=5 rd=x24
+ISSUE: cycle=102 rs=0 rob=R3 reason=ready
+COMMIT_STALL: cycle=102 head=R3 reason=head_not_ready
+COMMIT_STALL: cycle=103 head=R3 reason=head_not_ready
+CDB: cycle=104 rob=R3 rd=x24 data=00000058 wake_sources=0
+COMMIT_STALL: cycle=104 head=R3 reason=head_not_ready
+COMMIT: cycle=105 rob=R3 rd=x24 data=00000058
+CDB: cycle=106 rob=R3 rd=x22 data=deadbeef wake_sources=0

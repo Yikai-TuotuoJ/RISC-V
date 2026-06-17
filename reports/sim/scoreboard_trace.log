@@ -1,0 +1,102 @@
+SCOREBOARD: cycle=1 issue_valid=0 issue_ready=1 tid=0 op=0 rd=x0 rs1=x0 rs2=x0 alloc_entry=0 tag=1 valid=0000 ready=0000
+SCOREBOARD: cycle=2 issue_valid=0 issue_ready=1 tid=0 op=0 rd=x0 rs1=x0 rs2=x0 alloc_entry=0 tag=1 valid=0000 ready=0000
+SCOREBOARD: cycle=3 issue_valid=0 issue_ready=1 tid=0 op=0 rd=x0 rs1=x0 rs2=x0 alloc_entry=0 tag=1 valid=0000 ready=0000
+SCOREBOARD: cycle=4 issue_valid=0 issue_ready=1 tid=0 op=0 rd=x0 rs1=x0 rs2=x0 alloc_entry=0 tag=1 valid=0000 ready=0000
+SCOREBOARD: cycle=5 issue_valid=1 issue_ready=1 tid=0 op=1 rd=x0 rs1=x0 rs2=x0 alloc_entry=0 tag=1 valid=0000 ready=0000
+SCOREBOARD: cycle=6 issue_valid=0 issue_ready=1 tid=0 op=1 rd=x0 rs1=x0 rs2=x0 alloc_entry=1 tag=2 valid=0001 ready=0001
+SCOREBOARD: cycle=7 issue_valid=1 issue_ready=1 tid=0 op=1 rd=x5 rs1=x0 rs2=x0 alloc_entry=0 tag=2 valid=0000 ready=0000
+SCOREBOARD: cycle=8 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=1 tag=3 valid=0001 ready=0001
+SCOREBOARD: cycle=9 issue_valid=1 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=2 tag=4 valid=0011 ready=0001
+SCOREBOARD: cycle=10 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0101
+BROADCAST: cycle=10 tid=1 rd=x5 tag=2
+SCOREBOARD: cycle=11 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0101
+SCOREBOARD: cycle=12 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0101
+BROADCAST: cycle=12 tid=0 rd=x5 tag=2
+SCOREBOARD: cycle=13 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0111
+SCOREBOARD: cycle=14 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0111
+BROADCAST: cycle=14 tid=0 rd=x6 tag=3
+SCOREBOARD: cycle=15 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0111
+SCOREBOARD: cycle=16 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0111
+BROADCAST: cycle=16 tid=1 rd=x6 tag=4
+SCOREBOARD: cycle=17 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0111
+SCOREBOARD: cycle=18 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=3 tag=5 valid=0111 ready=0111
+SCOREBOARD: cycle=19 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=0 tag=5 valid=0110 ready=0110
+SCOREBOARD: cycle=20 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x6 rs1=x5 rs2=x1 alloc_entry=0 tag=5 valid=0100 ready=0100
+SCOREBOARD: cycle=21 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x10 rs1=x0 rs2=x0 alloc_entry=0 tag=5 valid=0000 ready=0000
+SCOREBOARD: cycle=22 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x11 rs1=x0 rs2=x0 alloc_entry=1 tag=6 valid=0001 ready=0001
+SCOREBOARD: cycle=23 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=2 tag=7 valid=0011 ready=0011
+SCOREBOARD: cycle=24 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0011
+BROADCAST: cycle=24 tid=0 rd=x10 tag=5
+SCOREBOARD: cycle=25 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0011
+SCOREBOARD: cycle=26 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0011
+BROADCAST: cycle=26 tid=0 rd=x11 tag=6
+SCOREBOARD: cycle=27 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0111
+SCOREBOARD: cycle=28 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0111
+BROADCAST: cycle=28 tid=0 rd=x12 tag=7
+SCOREBOARD: cycle=29 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0111
+SCOREBOARD: cycle=30 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=3 tag=8 valid=0111 ready=0111
+SCOREBOARD: cycle=31 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=0 tag=8 valid=0110 ready=0110
+SCOREBOARD: cycle=32 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x12 rs1=x10 rs2=x11 alloc_entry=0 tag=8 valid=0100 ready=0100
+SCOREBOARD: cycle=33 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x20 rs1=x0 rs2=x0 alloc_entry=0 tag=8 valid=0000 ready=0000
+SCOREBOARD: cycle=34 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x21 rs1=x20 rs2=x0 alloc_entry=1 tag=9 valid=0001 ready=0001
+SCOREBOARD: cycle=35 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=2 tag=10 valid=0011 ready=0001
+SCOREBOARD: cycle=36 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0001
+BROADCAST: cycle=36 tid=0 rd=x20 tag=8
+SCOREBOARD: cycle=37 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0111
+SCOREBOARD: cycle=38 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0111
+BROADCAST: cycle=38 tid=0 rd=x21 tag=9
+SCOREBOARD: cycle=39 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0111
+SCOREBOARD: cycle=40 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0111
+BROADCAST: cycle=40 tid=0 rd=x22 tag=10
+SCOREBOARD: cycle=41 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0111
+SCOREBOARD: cycle=42 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=3 tag=11 valid=0111 ready=0111
+SCOREBOARD: cycle=43 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=0 tag=11 valid=0110 ready=0110
+SCOREBOARD: cycle=44 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x22 rs1=x20 rs2=x0 alloc_entry=0 tag=11 valid=0100 ready=0100
+SCOREBOARD: cycle=45 issue_valid=1 issue_ready=1 tid=1 op=2 rd=x7 rs1=x0 rs2=x0 alloc_entry=0 tag=11 valid=0000 ready=0000
+SCOREBOARD: cycle=46 issue_valid=1 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=1 tag=12 valid=0001 ready=0001
+SCOREBOARD: cycle=47 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0001
+BROADCAST: cycle=47 tid=0 rd=x7 tag=11
+SCOREBOARD: cycle=48 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0001
+SCOREBOARD: cycle=49 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0001
+BROADCAST: cycle=49 tid=1 rd=x7 tag=11
+SCOREBOARD: cycle=50 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0011
+SCOREBOARD: cycle=51 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0011
+BROADCAST: cycle=51 tid=1 rd=x8 tag=12
+SCOREBOARD: cycle=52 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0011
+SCOREBOARD: cycle=53 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=2 tag=13 valid=0011 ready=0011
+SCOREBOARD: cycle=54 issue_valid=0 issue_ready=1 tid=1 op=2 rd=x8 rs1=x7 rs2=x0 alloc_entry=0 tag=13 valid=0010 ready=0010
+SCOREBOARD: cycle=55 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x9 rs1=x0 rs2=x0 alloc_entry=0 tag=13 valid=0000 ready=0000
+SCOREBOARD: cycle=56 issue_valid=1 issue_ready=1 tid=0 op=8 rd=x0 rs1=x0 rs2=x9 alloc_entry=1 tag=14 valid=0001 ready=0001
+SCOREBOARD: cycle=57 issue_valid=1 issue_ready=1 tid=0 op=9 rd=x0 rs1=x9 rs2=x0 alloc_entry=2 tag=15 valid=0011 ready=0001
+SCOREBOARD: cycle=58 issue_valid=0 issue_ready=1 tid=0 op=9 rd=x0 rs1=x9 rs2=x0 alloc_entry=3 tag=16 valid=0111 ready=0001
+BROADCAST: cycle=58 tid=0 rd=x9 tag=13
+SCOREBOARD: cycle=59 issue_valid=0 issue_ready=1 tid=0 op=9 rd=x0 rs1=x9 rs2=x0 alloc_entry=3 tag=16 valid=0111 ready=0111
+SCOREBOARD: cycle=60 issue_valid=0 issue_ready=1 tid=0 op=9 rd=x0 rs1=x9 rs2=x0 alloc_entry=3 tag=16 valid=0111 ready=0111
+SCOREBOARD: cycle=61 issue_valid=0 issue_ready=1 tid=0 op=9 rd=x0 rs1=x9 rs2=x0 alloc_entry=0 tag=16 valid=0110 ready=0110
+SCOREBOARD: cycle=62 issue_valid=0 issue_ready=1 tid=0 op=9 rd=x0 rs1=x9 rs2=x0 alloc_entry=0 tag=16 valid=0100 ready=0100
+SCOREBOARD: cycle=63 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x24 rs1=x0 rs2=x0 alloc_entry=0 tag=16 valid=0000 ready=0000
+SCOREBOARD: cycle=64 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x25 rs1=x0 rs2=x0 alloc_entry=1 tag=17 valid=0001 ready=0001
+SCOREBOARD: cycle=65 issue_valid=1 issue_ready=1 tid=1 op=2 rd=x26 rs1=x0 rs2=x0 alloc_entry=2 tag=18 valid=0011 ready=0011
+SCOREBOARD: cycle=66 issue_valid=1 issue_ready=1 tid=1 op=2 rd=x27 rs1=x0 rs2=x0 alloc_entry=3 tag=19 valid=0111 ready=0111
+SCOREBOARD: cycle=67 issue_valid=1 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=20 valid=1111 ready=1111
+SCOREBOARD: cycle=68 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=20 valid=1111 ready=1111
+SCOREBOARD: cycle=69 issue_valid=1 issue_ready=1 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=20 valid=1110 ready=1110
+SCOREBOARD: cycle=70 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+BROADCAST: cycle=70 tid=0 rd=x24 tag=16
+SCOREBOARD: cycle=71 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+SCOREBOARD: cycle=72 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+BROADCAST: cycle=72 tid=0 rd=x25 tag=17
+SCOREBOARD: cycle=73 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+SCOREBOARD: cycle=74 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+BROADCAST: cycle=74 tid=1 rd=x26 tag=18
+SCOREBOARD: cycle=75 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+SCOREBOARD: cycle=76 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+BROADCAST: cycle=76 tid=1 rd=x27 tag=19
+SCOREBOARD: cycle=77 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+SCOREBOARD: cycle=78 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+BROADCAST: cycle=78 tid=0 rd=x28 tag=20
+SCOREBOARD: cycle=79 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+SCOREBOARD: cycle=80 issue_valid=0 issue_ready=0 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=0 tag=21 valid=1111 ready=1111
+SCOREBOARD: cycle=81 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=1 tag=21 valid=1101 ready=1101
+SCOREBOARD: cycle=82 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=1 tag=21 valid=1001 ready=1001
+SCOREBOARD: cycle=83 issue_valid=0 issue_ready=1 tid=0 op=2 rd=x28 rs1=x0 rs2=x0 alloc_entry=1 tag=21 valid=0001 ready=0001

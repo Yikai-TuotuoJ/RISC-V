@@ -1,0 +1,6 @@
+WARNING: rtl/imem.sv:17: $readmemh(tests/benchmarks/ucp_rtl/shared_l2_reuse.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile sim/phase13_5_ucp_cache.vcd opened for output.
+WARNING: tb/tb_rv32i_pipeline_ucp_cache.sv:252: $readmemh(tests/benchmarks/ucp_rtl/shared_l2_reuse.hex): Not enough words in the file for the requested range [0:255].
+PASS: ucp_rtl_benchmark=shared_l2_reuse policy=0
+UCPRTL: benchmark=shared_l2_reuse policy=0 pass=PASS cycles=90 retired=12 cpi=7.500 stalls=70 loads=6 stores=0 l1_accesses=6 l1_hits=0 l1_misses=6 l1_hit_rate=0.00 l1_core0_accesses=3 l1_core0_hits=0 l1_core0_misses=3 l1_core1_accesses=3 l1_core1_hits=0 l1_core1_misses=3 l2_accesses=6 l2_hits=2 l2_misses=4 l2_hit_rate=33.33 l3_accesses=4 l3_hits=0 l3_misses=4 l3_hit_rate=0.00 l3_stream0_alloc=4 l3_stream0_accesses=2 l3_stream0_hits=0 l3_stream0_misses=2 l3_stream0_hit_rate=0.00 l3_stream1_alloc=4 l3_stream1_accesses=2 l3_stream1_hits=0 l3_stream1_misses=2 l3_stream1_hit_rate=0.00 backing_mem_accesses=4 dynamic_repartitions=0 dynamic_interval_count=0
+tb/tb_rv32i_pipeline_ucp_cache.sv:284: $finish called at 906000 (1ps)

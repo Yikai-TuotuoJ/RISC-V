@@ -1,0 +1,212 @@
+DISPATCH: cycle=27 rob=R0 rs=0 lsq=0 op=5
+ISSUE: cycle=28 rs=0 rob=R0 op=5 reason=ready
+CDB: cycle=28 rob=R0 data=00000009 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=28 reason=head_not_ready
+COMMIT: cycle=29 rob=R0 rd=x10 data=00000009 store=0
+DISPATCH: cycle=31 rob=R1 rs=0 lsq=0 op=0
+ISSUE: cycle=32 rs=0 rob=R1 op=0 reason=ready
+CDB: cycle=32 rob=R1 data=0000000c wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=32 reason=head_not_ready
+COMMIT: cycle=33 rob=R1 rd=x11 data=0000000c store=0
+DISPATCH: cycle=35 rob=R2 rs=0 lsq=0 op=1
+ISSUE: cycle=36 rs=0 rob=R2 op=1 reason=ready
+CDB: cycle=36 rob=R2 data=00000002 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=36 reason=head_not_ready
+COMMIT: cycle=37 rob=R2 rd=x12 data=00000002 store=0
+DISPATCH: cycle=39 rob=R3 rs=0 lsq=0 op=2
+ISSUE: cycle=40 rs=0 rob=R3 op=2 reason=ready
+CDB: cycle=40 rob=R3 data=000000f0 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=40 reason=head_not_ready
+COMMIT: cycle=41 rob=R3 rd=x13 data=000000f0 store=0
+DISPATCH: cycle=43 rob=R4 rs=0 lsq=0 op=3
+ISSUE: cycle=44 rs=0 rob=R4 op=3 reason=ready
+CDB: cycle=44 rob=R4 data=0000fff0 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=44 reason=head_not_ready
+COMMIT: cycle=45 rob=R4 rd=x14 data=0000fff0 store=0
+DISPATCH: cycle=47 rob=R5 rs=0 lsq=0 op=4
+ISSUE: cycle=48 rs=0 rob=R5 op=4 reason=ready
+CDB: cycle=48 rob=R5 data=0000ff00 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=48 reason=head_not_ready
+COMMIT: cycle=49 rob=R5 rd=x15 data=0000ff00 store=0
+DISPATCH: cycle=51 rob=R6 rs=0 lsq=0 op=5
+ISSUE: cycle=52 rs=0 rob=R6 op=5 reason=ready
+CDB: cycle=52 rob=R6 data=00000037 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=52 reason=head_not_ready
+COMMIT: cycle=53 rob=R6 rd=x0 data=00000037 store=0
+DISPATCH: cycle=57 rob=R7 rs=0 lsq=0 op=0
+COMMIT_STALL: cycle=58 reason=head_not_ready
+DISPATCH: cycle=59 rob=R0 rs=1 lsq=0 op=5
+COMMIT_STALL: cycle=59 reason=head_not_ready
+ISSUE: cycle=60 rs=1 rob=R0 op=5 reason=ready
+CDB: cycle=60 rob=R0 data=0000001a wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=60 reason=head_not_ready
+COMMIT_STALL: cycle=61 reason=head_not_ready
+COMMIT_STALL: cycle=62 reason=head_not_ready
+COMMIT_STALL: cycle=63 reason=head_not_ready
+COMMIT_STALL: cycle=64 reason=head_not_ready
+COMMIT_STALL: cycle=65 reason=head_not_ready
+COMMIT_STALL: cycle=66 reason=head_not_ready
+CDB: cycle=67 rob=R6 data=00000003 wake_entries=1 rob_ready=1
+COMMIT_STALL: cycle=67 reason=head_not_ready
+ISSUE: cycle=68 rs=0 rob=R7 op=0 reason=ready
+CDB: cycle=68 rob=R7 data=00000008 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=68 reason=head_not_ready
+COMMIT: cycle=69 rob=R7 rd=x21 data=00000008 store=0
+COMMIT: cycle=70 rob=R0 rd=x22 data=0000001a store=0
+DISPATCH: cycle=72 rob=R1 rs=0 lsq=0 op=5
+ISSUE: cycle=73 rs=0 rob=R1 op=5 reason=ready
+CDB: cycle=73 rob=R1 data=00000001 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=73 reason=head_not_ready
+DISPATCH: cycle=74 rob=R2 rs=0 lsq=0 op=5
+COMMIT: cycle=74 rob=R1 rd=x23 data=00000001 store=0
+ISSUE: cycle=75 rs=0 rob=R2 op=5 reason=ready
+CDB: cycle=75 rob=R2 data=00000002 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=75 reason=head_not_ready
+COMMIT: cycle=76 rob=R2 rd=x23 data=00000002 store=0
+DISPATCH: cycle=78 rob=R3 rs=0 lsq=0 op=6
+LSQ_ALLOC: cycle=78 entry=0 type= LOAD
+CDB: cycle=79 rob=R3 data=11111111 wake_entries=0 rob_ready=1
+LOAD_EXEC: cycle=79 entry=0 addr=00000100 data=11111111
+COMMIT_STALL: cycle=79 reason=head_not_ready
+COMMIT: cycle=80 rob=R3 rd=x24 data=11111111 store=0
+DISPATCH: cycle=82 rob=R4 rs=0 lsq=0 op=7
+LSQ_ALLOC: cycle=82 entry=0 type=STORE
+STORE_COMMIT: cycle=83 entry=0 addr=00000104 data=00000005
+COMMIT: cycle=83 rob=R4 rd=x0 data=00000005 store=1
+DISPATCH: cycle=85 rob=R5 rs=0 lsq=0 op=6
+LSQ_ALLOC: cycle=85 entry=0 type= LOAD
+CDB: cycle=86 rob=R5 data=00000005 wake_entries=0 rob_ready=1
+LOAD_EXEC: cycle=86 entry=0 addr=00000104 data=00000005
+COMMIT_STALL: cycle=86 reason=head_not_ready
+COMMIT: cycle=87 rob=R5 rd=x25 data=00000005 store=0
+DISPATCH: cycle=91 rob=R6 rs=0 lsq=0 op=7
+LSQ_ALLOC: cycle=91 entry=0 type=STORE
+COMMIT_STALL: cycle=92 reason=head_not_ready
+DISPATCH: cycle=93 rob=R7 rs=0 lsq=1 op=6
+LSQ_ALLOC: cycle=93 entry=1 type= LOAD
+COMMIT_STALL: cycle=93 reason=head_not_ready
+MEM_ORDER_STALL: cycle=94 reason=older_unresolved_store
+COMMIT_STALL: cycle=94 reason=head_not_ready
+MEM_ORDER_STALL: cycle=95 reason=older_unresolved_store
+COMMIT_STALL: cycle=95 reason=head_not_ready
+MEM_ORDER_STALL: cycle=96 reason=older_unresolved_store
+COMMIT_STALL: cycle=96 reason=head_not_ready
+MEM_ORDER_STALL: cycle=97 reason=older_unresolved_store
+COMMIT_STALL: cycle=97 reason=head_not_ready
+MEM_ORDER_STALL: cycle=98 reason=older_unresolved_store
+COMMIT_STALL: cycle=98 reason=head_not_ready
+MEM_ORDER_STALL: cycle=99 reason=older_unresolved_store
+COMMIT_STALL: cycle=99 reason=head_not_ready
+MEM_ORDER_STALL: cycle=100 reason=older_unresolved_store
+COMMIT_STALL: cycle=100 reason=head_not_ready
+CDB: cycle=101 rob=R7 data=00000abc wake_entries=1 rob_ready=1
+MEM_ORDER_STALL: cycle=101 reason=older_unresolved_store
+COMMIT_STALL: cycle=101 reason=head_not_ready
+MEM_ORDER_STALL: cycle=102 reason=older_unresolved_store
+STORE_COMMIT: cycle=102 entry=0 addr=00000110 data=00000abc
+COMMIT: cycle=102 rob=R6 rd=x0 data=00000abc store=1
+CDB: cycle=103 rob=R7 data=00000abc wake_entries=0 rob_ready=1
+LOAD_EXEC: cycle=103 entry=1 addr=00000110 data=00000abc
+COMMIT: cycle=103 rob=R7 rd=x27 data=00000abc store=0
+DISPATCH: cycle=107 rob=R0 rs=0 lsq=0 op=6
+LSQ_ALLOC: cycle=107 entry=0 type= LOAD
+COMMIT_STALL: cycle=108 reason=head_not_ready
+COMMIT_STALL: cycle=109 reason=head_not_ready
+COMMIT_STALL: cycle=110 reason=head_not_ready
+COMMIT_STALL: cycle=111 reason=head_not_ready
+COMMIT_STALL: cycle=112 reason=head_not_ready
+CDB: cycle=113 rob=R4 data=00000100 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=113 reason=head_not_ready
+COMMIT_STALL: cycle=114 reason=head_not_ready
+COMMIT_STALL: cycle=115 reason=head_not_ready
+CDB: cycle=116 rob=R7 data=00000100 wake_entries=1 rob_ready=1
+COMMIT_STALL: cycle=116 reason=head_not_ready
+CDB: cycle=117 rob=R0 data=33333333 wake_entries=0 rob_ready=1
+LOAD_EXEC: cycle=117 entry=0 addr=00000108 data=33333333
+COMMIT_STALL: cycle=117 reason=head_not_ready
+COMMIT: cycle=118 rob=R0 rd=x29 data=33333333 store=0
+DISPATCH: cycle=122 rob=R1 rs=0 lsq=0 op=7
+LSQ_ALLOC: cycle=122 entry=0 type=STORE
+COMMIT_STALL: cycle=123 reason=head_not_ready
+COMMIT_STALL: cycle=124 reason=head_not_ready
+COMMIT_STALL: cycle=125 reason=head_not_ready
+COMMIT_STALL: cycle=126 reason=head_not_ready
+COMMIT_STALL: cycle=127 reason=head_not_ready
+COMMIT_STALL: cycle=128 reason=head_not_ready
+CDB: cycle=129 rob=R6 data=00007777 wake_entries=1 rob_ready=1
+COMMIT_STALL: cycle=129 reason=head_not_ready
+STORE_COMMIT: cycle=130 entry=0 addr=00000114 data=00007777
+COMMIT: cycle=130 rob=R1 rd=x0 data=00007777 store=1
+DISPATCH: cycle=134 rob=R2 rs=0 lsq=0 op=0
+COMMIT_STALL: cycle=135 reason=head_not_ready
+DISPATCH: cycle=136 rob=R3 rs=1 lsq=0 op=0
+COMMIT_STALL: cycle=136 reason=head_not_ready
+COMMIT_STALL: cycle=137 reason=head_not_ready
+CDB: cycle=138 rob=R6 data=0000000a wake_entries=2 rob_ready=1
+COMMIT_STALL: cycle=138 reason=head_not_ready
+ISSUE: cycle=139 rs=0 rob=R2 op=0 reason=ready
+CDB: cycle=139 rob=R2 data=0000000f wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=139 reason=head_not_ready
+ISSUE: cycle=140 rs=1 rob=R3 op=0 reason=ready
+CDB: cycle=140 rob=R3 data=00000011 wake_entries=0 rob_ready=1
+COMMIT: cycle=140 rob=R2 rd=x16 data=0000000f store=0
+COMMIT: cycle=141 rob=R3 rd=x17 data=00000011 store=0
+DISPATCH: cycle=145 rob=R4 rs=0 lsq=0 op=0
+COMMIT_STALL: cycle=146 reason=head_not_ready
+DISPATCH: cycle=147 rob=R5 rs=1 lsq=0 op=0
+COMMIT_STALL: cycle=147 reason=head_not_ready
+COMMIT_STALL: cycle=148 reason=head_not_ready
+DISPATCH: cycle=149 rob=R6 rs=2 lsq=0 op=0
+COMMIT_STALL: cycle=149 reason=head_not_ready
+COMMIT_STALL: cycle=150 reason=head_not_ready
+DISPATCH: cycle=151 rob=R7 rs=3 lsq=0 op=0
+COMMIT_STALL: cycle=151 reason=head_not_ready
+COMMIT_STALL: cycle=152 reason=head_not_ready
+COMMIT_STALL: cycle=153 reason=head_not_ready
+COMMIT_STALL: cycle=154 reason=head_not_ready
+COMMIT_STALL: cycle=155 reason=head_not_ready
+COMMIT_STALL: cycle=156 reason=head_not_ready
+CDB: cycle=157 rob=R6 data=00000001 wake_entries=4 rob_ready=1
+COMMIT_STALL: cycle=157 reason=head_not_ready
+ISSUE: cycle=158 rs=0 rob=R4 op=0 reason=ready
+CDB: cycle=158 rob=R4 data=00000006 wake_entries=0 rob_ready=1
+COMMIT_STALL: cycle=158 reason=head_not_ready
+ISSUE: cycle=159 rs=1 rob=R5 op=0 reason=ready
+CDB: cycle=159 rob=R5 data=00000006 wake_entries=0 rob_ready=1
+COMMIT: cycle=159 rob=R4 rd=x6 data=00000006 store=0
+ISSUE: cycle=160 rs=2 rob=R6 op=0 reason=ready
+CDB: cycle=160 rob=R6 data=00000006 wake_entries=0 rob_ready=1
+COMMIT: cycle=160 rob=R5 rd=x7 data=00000006 store=0
+ISSUE: cycle=161 rs=3 rob=R7 op=0 reason=ready
+CDB: cycle=161 rob=R7 data=00000006 wake_entries=0 rob_ready=1
+COMMIT: cycle=161 rob=R6 rd=x8 data=00000001 store=0
+COMMIT: cycle=162 rob=R7 rd=x9 data=00000006 store=0
+DISPATCH: cycle=166 rob=R0 rs=0 lsq=0 op=7
+LSQ_ALLOC: cycle=166 entry=0 type=STORE
+COMMIT_STALL: cycle=167 reason=head_not_ready
+DISPATCH: cycle=168 rob=R1 rs=0 lsq=1 op=7
+LSQ_ALLOC: cycle=168 entry=1 type=STORE
+COMMIT_STALL: cycle=168 reason=head_not_ready
+COMMIT_STALL: cycle=169 reason=head_not_ready
+DISPATCH: cycle=170 rob=R2 rs=0 lsq=2 op=7
+LSQ_ALLOC: cycle=170 entry=2 type=STORE
+COMMIT_STALL: cycle=170 reason=head_not_ready
+COMMIT_STALL: cycle=171 reason=head_not_ready
+DISPATCH: cycle=172 rob=R3 rs=0 lsq=3 op=7
+LSQ_ALLOC: cycle=172 entry=3 type=STORE
+COMMIT_STALL: cycle=172 reason=head_not_ready
+COMMIT_STALL: cycle=173 reason=head_not_ready
+COMMIT_STALL: cycle=174 reason=head_not_ready
+COMMIT_STALL: cycle=175 reason=head_not_ready
+COMMIT_STALL: cycle=176 reason=head_not_ready
+COMMIT_STALL: cycle=177 reason=head_not_ready
+CDB: cycle=178 rob=R7 data=00000120 wake_entries=4 rob_ready=1
+COMMIT_STALL: cycle=178 reason=head_not_ready
+STORE_COMMIT: cycle=179 entry=0 addr=00000120 data=00000005
+COMMIT: cycle=179 rob=R0 rd=x0 data=00000005 store=1
+STORE_COMMIT: cycle=180 entry=1 addr=00000124 data=00000005
+COMMIT: cycle=180 rob=R1 rd=x0 data=00000005 store=1
+STORE_COMMIT: cycle=181 entry=2 addr=00000128 data=00000005
+COMMIT: cycle=181 rob=R2 rd=x0 data=00000005 store=1
+STORE_COMMIT: cycle=182 entry=3 addr=0000012c data=00000005
+COMMIT: cycle=182 rob=R3 rd=x0 data=00000005 store=1

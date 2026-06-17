@@ -1,0 +1,912 @@
+IF: tid=0 pc=00000000
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=1
+CDB: tid=0 data=00000005
+COMMIT: tid=0 rd=x1 data=00000005 store=0 total=1
+IF: tid=1 pc=00000100
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=2
+CDB: tid=1 data=00000014
+COMMIT: tid=1 rd=x1 data=00000014 store=0 total=2
+IF: tid=0 pc=00000004
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=3
+CDB: tid=0 data=00000007
+COMMIT: tid=0 rd=x2 data=00000007 store=0 total=3
+IF: tid=1 pc=00000104
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=4
+CDB: tid=1 data=00000001
+COMMIT: tid=1 rd=x2 data=00000001 store=0 total=4
+IF: tid=0 pc=00000008
+DISPATCH: tid=0 op=1
+ISSUE: tid=0 op=1 oldest_ready_count=5
+CDB: tid=0 data=0000000c
+COMMIT: tid=0 rd=x3 data=0000000c store=0 total=5
+IF: tid=1 pc=00000108
+DISPATCH: tid=1 op=1
+ISSUE: tid=1 op=1 oldest_ready_count=6
+CDB: tid=1 data=00000015
+COMMIT: tid=1 rd=x3 data=00000015 store=0 total=6
+IF: tid=0 pc=0000000c
+DISPATCH: tid=0 op=2
+ISSUE: tid=0 op=2 oldest_ready_count=7
+CDB: tid=0 data=00000007
+COMMIT: tid=0 rd=x4 data=00000007 store=0 total=7
+IF: tid=1 pc=0000010c
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=8
+CDB: tid=1 data=00000080
+COMMIT: tid=1 rd=x10 data=00000080 store=0 total=8
+IF: tid=0 pc=00000010
+DISPATCH: tid=0 op=3
+ISSUE: tid=0 op=3 oldest_ready_count=9
+CDB: tid=0 data=00000004
+COMMIT: tid=0 rd=x5 data=00000004 store=0 total=9
+IF: tid=1 pc=00000110
+DISPATCH: tid=1 op=8
+ISSUE: tid=1 op=8 oldest_ready_count=10
+CACHE: tid=1 level=0 l1_s0=0/0 l1_s1=0/1 l2=0/1 l3=0/1 ucp=2/2
+COMMIT: tid=1 rd=x0 data=00000015 store=1 total=10
+IF: tid=0 pc=00000014
+DISPATCH: tid=0 op=4
+ISSUE: tid=0 op=4 oldest_ready_count=11
+CDB: tid=0 data=0000000f
+COMMIT: tid=0 rd=x6 data=0000000f store=0 total=11
+IF: tid=1 pc=00000114
+DISPATCH: tid=1 op=7
+ISSUE: tid=1 op=7 oldest_ready_count=12
+CDB: tid=1 data=00000015
+COMMIT: tid=1 rd=x4 data=00000015 store=0 total=12
+CACHE: tid=1 level=1 l1_s0=0/0 l1_s1=1/1 l2=0/1 l3=0/1 ucp=2/2
+IF: tid=0 pc=00000018
+DISPATCH: tid=0 op=5
+ISSUE: tid=0 op=5 oldest_ready_count=13
+CDB: tid=0 data=0000000b
+COMMIT: tid=0 rd=x7 data=0000000b store=0 total=13
+IF: tid=1 pc=00000118
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=14
+CDB: tid=1 data=00000090
+COMMIT: tid=1 rd=x10 data=00000090 store=0 total=14
+IF: tid=0 pc=0000001c
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=15
+CDB: tid=0 data=00000063
+COMMIT: tid=0 rd=x0 data=00000063 store=0 total=15
+IF: tid=1 pc=0000011c
+DISPATCH: tid=1 op=8
+ISSUE: tid=1 op=8 oldest_ready_count=16
+CACHE: tid=1 level=0 l1_s0=0/0 l1_s1=1/2 l2=0/2 l3=0/2 ucp=2/2
+COMMIT: tid=1 rd=x0 data=00000014 store=1 total=16
+IF: tid=0 pc=00000020
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=17
+CDB: tid=0 data=00000040
+COMMIT: tid=0 rd=x10 data=00000040 store=0 total=17
+IF: tid=1 pc=00000120
+DISPATCH: tid=1 op=7
+ISSUE: tid=1 op=7 oldest_ready_count=18
+CDB: tid=1 data=00000014
+COMMIT: tid=1 rd=x6 data=00000014 store=0 total=18
+CACHE: tid=1 level=1 l1_s0=0/0 l1_s1=2/2 l2=0/2 l3=0/2 ucp=2/2
+IF: tid=0 pc=00000024
+DISPATCH: tid=0 op=8
+ISSUE: tid=0 op=8 oldest_ready_count=19
+CACHE: tid=0 level=0 l1_s0=0/1 l1_s1=2/2 l2=0/3 l3=0/3 ucp=2/2
+COMMIT: tid=0 rd=x0 data=0000000c store=1 total=19
+IF: tid=1 pc=00000124
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=20
+CDB: tid=1 data=000000a0
+COMMIT: tid=1 rd=x10 data=000000a0 store=0 total=20
+IF: tid=0 pc=00000028
+DISPATCH: tid=0 op=7
+ISSUE: tid=0 op=7 oldest_ready_count=21
+CDB: tid=0 data=0000000c
+COMMIT: tid=0 rd=x11 data=0000000c store=0 total=21
+CACHE: tid=0 level=1 l1_s0=1/1 l1_s1=2/2 l2=0/3 l3=0/3 ucp=2/2
+IF: tid=1 pc=00000128
+DISPATCH: tid=1 op=8
+ISSUE: tid=1 op=8 oldest_ready_count=22
+CACHE: tid=1 level=0 l1_s0=1/1 l1_s1=2/3 l2=0/4 l3=0/4 ucp=2/2
+COMMIT: tid=1 rd=x0 data=00000001 store=1 total=22
+IF: tid=0 pc=0000002c
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=23
+CDB: tid=0 data=00000050
+COMMIT: tid=0 rd=x10 data=00000050 store=0 total=23
+IF: tid=1 pc=0000012c
+DISPATCH: tid=1 op=7
+ISSUE: tid=1 op=7 oldest_ready_count=24
+CDB: tid=1 data=00000001
+COMMIT: tid=1 rd=x7 data=00000001 store=0 total=24
+CACHE: tid=1 level=1 l1_s0=1/1 l1_s1=3/3 l2=0/4 l3=0/4 ucp=2/2
+IF: tid=0 pc=00000030
+DISPATCH: tid=0 op=8
+ISSUE: tid=0 op=8 oldest_ready_count=25
+CACHE: tid=0 level=0 l1_s0=1/2 l1_s1=3/3 l2=0/5 l3=0/5 ucp=2/2
+COMMIT: tid=0 rd=x0 data=00000007 store=1 total=25
+IF: tid=1 pc=00000130
+DISPATCH: tid=1 op=10
+ISSUE: tid=1 op=10 oldest_ready_count=26
+COMMIT: tid=1 rd=x0 data=00000000 store=1 total=26
+RECOVER: tid=1 target=00000138
+IF: tid=0 pc=00000034
+DISPATCH: tid=0 op=7
+ISSUE: tid=0 op=7 oldest_ready_count=27
+CDB: tid=0 data=00000007
+COMMIT: tid=0 rd=x16 data=00000007 store=1 total=27
+CACHE: tid=0 level=1 l1_s0=2/2 l1_s1=3/3 l2=0/5 l3=0/5 ucp=2/2
+IF: tid=1 pc=00000138
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=28
+CDB: tid=1 data=00000005
+COMMIT: tid=1 rd=x5 data=00000005 store=0 total=28
+IF: tid=0 pc=00000038
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=29
+CDB: tid=0 data=00000060
+COMMIT: tid=0 rd=x10 data=00000060 store=0 total=29
+IF: tid=1 pc=0000013c
+DISPATCH: tid=1 op=9
+ISSUE: tid=1 op=9 oldest_ready_count=30
+COMMIT: tid=1 rd=x0 data=00000000 store=0 total=30
+RECOVER: tid=1 target=00000144
+IF: tid=0 pc=0000003c
+DISPATCH: tid=0 op=8
+ISSUE: tid=0 op=8 oldest_ready_count=31
+CACHE: tid=0 level=0 l1_s0=2/3 l1_s1=3/3 l2=0/6 l3=0/6 ucp=2/2
+COMMIT: tid=0 rd=x0 data=00000005 store=1 total=31
+IF: tid=1 pc=00000144
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=32
+CDB: tid=1 data=00000008
+COMMIT: tid=1 rd=x8 data=00000008 store=0 total=32
+IF: tid=0 pc=00000040
+DISPATCH: tid=0 op=7
+ISSUE: tid=0 op=7 oldest_ready_count=33
+CDB: tid=0 data=00000005
+COMMIT: tid=0 rd=x17 data=00000005 store=0 total=33
+CACHE: tid=0 level=1 l1_s0=3/3 l1_s1=3/3 l2=0/6 l3=0/6 ucp=2/2
+IF: tid=1 pc=00000148
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=34
+COMMIT: tid=1 rd=x9 data=0000014c store=0 total=34
+RECOVER: tid=1 target=00000150
+IF: tid=0 pc=00000044
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=35
+CDB: tid=0 data=00000070
+COMMIT: tid=0 rd=x10 data=00000070 store=0 total=35
+IF: tid=1 pc=00000150
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=36
+CDB: tid=1 data=0000000c
+COMMIT: tid=1 rd=x12 data=0000000c store=0 total=36
+IF: tid=0 pc=00000048
+DISPATCH: tid=0 op=8
+ISSUE: tid=0 op=8 oldest_ready_count=37
+CACHE: tid=0 level=0 l1_s0=3/4 l1_s1=3/3 l2=0/7 l3=0/7 ucp=2/2
+COMMIT: tid=0 rd=x0 data=00000007 store=1 total=37
+IF: tid=1 pc=00000154
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=38
+CDB: tid=1 data=00000168
+COMMIT: tid=1 rd=x20 data=00000168 store=0 total=38
+IF: tid=0 pc=0000004c
+DISPATCH: tid=0 op=7
+ISSUE: tid=0 op=7 oldest_ready_count=39
+CDB: tid=0 data=00000007
+COMMIT: tid=0 rd=x18 data=00000007 store=0 total=39
+CACHE: tid=0 level=1 l1_s0=4/4 l1_s1=3/3 l2=0/7 l3=0/7 ucp=2/2
+UCP: repartition alloc0=2 alloc1=2 count=1
+IF: tid=1 pc=00000158
+DISPATCH: tid=1 op=12
+ISSUE: tid=1 op=12 oldest_ready_count=40
+COMMIT: tid=1 rd=x21 data=0000015c store=0 total=40
+RECOVER: tid=1 target=00000168
+IF: tid=0 pc=00000050
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=41
+CDB: tid=0 data=00000040
+COMMIT: tid=0 rd=x10 data=00000040 store=0 total=41
+IF: tid=1 pc=00000168
+DISPATCH: tid=1 op=6
+ISSUE: tid=1 op=6 oldest_ready_count=42
+CDB: tid=1 data=00000006
+COMMIT: tid=1 rd=x22 data=00000006 store=0 total=42
+IF: tid=0 pc=00000054
+DISPATCH: tid=0 op=7
+ISSUE: tid=0 op=7 oldest_ready_count=43
+CACHE: tid=0 level=0 l1_s0=4/5 l1_s1=3/3 l2=0/8 l3=0/8 ucp=2/2
+CDB: tid=0 data=0000000c
+COMMIT: tid=0 rd=x19 data=0000000c store=0 total=43
+CACHE: tid=0 level=0 l1_s0=4/6 l1_s1=3/3 l2=0/9 l3=0/9 ucp=2/2
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=44
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=44
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000058
+DISPATCH: tid=0 op=9
+ISSUE: tid=0 op=9 oldest_ready_count=45
+COMMIT: tid=0 rd=x0 data=00000000 store=0 total=45
+RECOVER: tid=0 target=00000060
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=46
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=46
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000060
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=47
+CDB: tid=0 data=00000002
+COMMIT: tid=0 rd=x12 data=00000002 store=0 total=47
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=48
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=48
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000064
+DISPATCH: tid=0 op=10
+ISSUE: tid=0 op=10 oldest_ready_count=49
+COMMIT: tid=0 rd=x0 data=00000000 store=0 total=49
+RECOVER: tid=0 target=0000006c
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=50
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=50
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=0000006c
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=51
+CDB: tid=0 data=00000003
+COMMIT: tid=0 rd=x13 data=00000003 store=0 total=51
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=52
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=52
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000070
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=53
+COMMIT: tid=0 rd=x14 data=00000074 store=0 total=53
+RECOVER: tid=0 target=00000078
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=54
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=54
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000078
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=55
+CDB: tid=0 data=00000003
+COMMIT: tid=0 rd=x15 data=00000003 store=0 total=55
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=56
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=56
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=0000007c
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=57
+CDB: tid=0 data=0000008c
+COMMIT: tid=0 rd=x20 data=0000008c store=0 total=57
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=58
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=58
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000080
+DISPATCH: tid=0 op=12
+ISSUE: tid=0 op=12 oldest_ready_count=59
+COMMIT: tid=0 rd=x21 data=00000084 store=0 total=59
+RECOVER: tid=0 target=0000008c
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=60
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=60
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=0000008c
+DISPATCH: tid=0 op=6
+ISSUE: tid=0 op=6 oldest_ready_count=61
+CDB: tid=0 data=00000004
+COMMIT: tid=0 rd=x22 data=00000004 store=0 total=61
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=62
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=62
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=63
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=63
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=64
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=64
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=65
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=65
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=66
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=66
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=67
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=67
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=68
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=68
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=69
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=69
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=70
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=70
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=71
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=71
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=72
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=72
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=73
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=73
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=74
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=74
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=75
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=75
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=76
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=76
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=77
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=77
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=78
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=78
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=79
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=79
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=80
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=80
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=81
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=81
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=82
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=82
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=83
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=83
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=84
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=84
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=85
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=85
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=86
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=86
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=87
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=87
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=88
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=88
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=89
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=89
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=90
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=90
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=91
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=91
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=92
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=92
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=93
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=93
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=94
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=94
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=95
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=95
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=96
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=96
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=97
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=97
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=98
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=98
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=99
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=99
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=100
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=100
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=101
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=101
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=102
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=102
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=103
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=103
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=104
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=104
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=105
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=105
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=106
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=106
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=107
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=107
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=108
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=108
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=109
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=109
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=110
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=110
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=111
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=111
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=112
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=112
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=113
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=113
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=114
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=114
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=115
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=115
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=116
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=116
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=117
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=117
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=118
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=118
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=119
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=119
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=120
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=120
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=121
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=121
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=122
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=122
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=123
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=123
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=124
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=124
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=125
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=125
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=126
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=126
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=127
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=127
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=128
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=128
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=129
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=129
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=130
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=130
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=131
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=131
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=132
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=132
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=133
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=133
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=134
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=134
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=135
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=135
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=136
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=136
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=137
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=137
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=138
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=138
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=139
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=139
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=140
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=140
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=141
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=141
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=142
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=142
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=143
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=143
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=144
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=144
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=145
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=145
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=146
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=146
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=147
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=147
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=148
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=148
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=149
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=149
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=150
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=150
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=151
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=151
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=152
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=152
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=153
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=153
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=154
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=154
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=155
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=155
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=156
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=156
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=157
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=157
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=158
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=158
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=159
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=159
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+DISPATCH: tid=1 op=11
+ISSUE: tid=1 op=11 oldest_ready_count=160
+COMMIT: tid=1 rd=x0 data=00000170 store=0 total=160
+RECOVER: tid=1 target=0000016c
+IF: tid=0 pc=00000090
+DISPATCH: tid=0 op=11
+ISSUE: tid=0 op=11 oldest_ready_count=161
+COMMIT: tid=0 rd=x0 data=00000094 store=0 total=161
+RECOVER: tid=0 target=00000090
+IF: tid=1 pc=0000016c
+CHECK_PASS: thread0 ADDI x1
+CHECK_PASS: thread0 ADDI x2
+CHECK_PASS: thread0 ADD x3
+CHECK_PASS: thread0 SUB x4
+CHECK_PASS: thread0 AND x5
+CHECK_PASS: thread0 OR x6
+CHECK_PASS: thread0 XOR x7
+CHECK_PASS: thread0 x0 hardwired
+CHECK_PASS: thread0 first load
+CHECK_PASS: thread0 load 80
+CHECK_PASS: thread0 load 96
+CHECK_PASS: thread0 load 112
+CHECK_PASS: thread0 reload 64
+CHECK_PASS: thread0 BEQ skipped wrong path
+CHECK_PASS: thread0 BNE skipped wrong path
+CHECK_PASS: thread0 JAL link
+CHECK_PASS: thread0 JAL target
+CHECK_PASS: thread0 JALR link
+CHECK_PASS: thread0 JALR target
+CHECK_PASS: thread0 memory 64
+CHECK_PASS: thread0 memory 80
+CHECK_PASS: thread0 memory 96
+CHECK_PASS: thread0 memory 112
+CHECK_PASS: thread1 ADDI x1
+CHECK_PASS: thread1 ADDI x2
+CHECK_PASS: thread1 ADD x3
+CHECK_PASS: thread1 load 128
+CHECK_PASS: thread1 load 144
+CHECK_PASS: thread1 load 160
+CHECK_PASS: thread1 BNE skipped wrong path
+CHECK_PASS: thread1 BEQ skipped wrong path
+CHECK_PASS: thread1 JAL link
+CHECK_PASS: thread1 JAL target
+CHECK_PASS: thread1 JALR link
+CHECK_PASS: thread1 JALR target
+CHECK_PASS: thread1 x0 hardwired
+CHECK_PASS: thread1 memory 128
+CHECK_PASS: thread1 memory 144
+CHECK_PASS: thread1 memory 160
+CHECK_PASS: fetch monitor thread0
+CHECK_PASS: fetch monitor thread1
+CHECK_PASS: round robin roughly balanced
+CHECK_PASS: dispatch monitor thread0
+CHECK_PASS: dispatch monitor thread1
+CHECK_PASS: issue monitor thread0
+CHECK_PASS: issue monitor thread1
+CHECK_PASS: cdb monitor thread0
+CHECK_PASS: cdb monitor thread1
+CHECK_PASS: commit monitor thread0
+CHECK_PASS: commit monitor thread1
+CHECK_PASS: recovery monitor thread0
+CHECK_PASS: recovery monitor thread1
+CHECK_PASS: decoded count
+CHECK_PASS: dispatch count matches decoded
+CHECK_PASS: issue count matches decoded
+CHECK_PASS: ROB tail advanced
+CHECK_PASS: ROB entries observed
+CHECK_PASS: CDB broadcasts
+CHECK_PASS: in-order commit count
+CHECK_PASS: thread0 commit count
+CHECK_PASS: thread1 commit count
+CHECK_PASS: oldest-ready RS selections
+CHECK_PASS: store-at-commit count
+CHECK_PASS: x0 suppressed count
+CHECK_PASS: branch and jump count
+CHECK_PASS: mispredict recovery count
+CHECK_PASS: wrong path squash count
+CHECK_PASS: gshare ghr changed
+CHECK_PASS: gshare index observable
+CHECK_PASS: cache monitor thread0
+CHECK_PASS: cache monitor thread1
+CHECK_PASS: private L1 thread0 access
+CHECK_PASS: private L1 thread1 access
+CHECK_PASS: private L1 thread0 consistency
+CHECK_PASS: private L1 thread1 consistency
+CHECK_PASS: private L1 both banks used
+CHECK_PASS: shared L2 accessed
+CHECK_PASS: shared L2 consistency
+CHECK_PASS: shared L2 pseudo-LRU replacements
+CHECK_PASS: shared L3 accessed
+CHECK_PASS: shared L3 consistency
+CHECK_PASS: shared L3 tree pseudo-LRU replacements
+CHECK_PASS: dynamic UCP repartitions
+CHECK_PASS: dynamic UCP monitor events
+CHECK_PASS: dynamic UCP allocation sum
+CHECK_PASS: dynamic UCP allocation min stream0
+CHECK_PASS: dynamic UCP allocation min stream1
+CHECK_PASS: backing memory requests
+CHECK_PASS: cache hit or miss activity
+CHECK_PASS: product imem bus used
+CHECK_PASS: product dmem bus used
+CHECK_PASS: no active dmem request at end
+CHECK_PASS: no pending dmem at end
+CHECK_PASS: thread0 pc progressed
+CHECK_PASS: thread1 pc progressed
+CHECK_PASS: final check count threshold

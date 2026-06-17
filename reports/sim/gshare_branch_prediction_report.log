@@ -1,0 +1,20 @@
+Phase 7 Gshare Branch Prediction Report
+Predictor: gshare
+PHT entries: 16
+GHR width: 4
+Counter type: 2-bit saturating
+Initial counter state: weakly not taken
+Index: branch_pc[5:2] XOR GHR
+total_conditional_branches=11
+predicted_taken=3
+predicted_not_taken=8
+actual_taken=9
+actual_not_taken=2
+correct_predictions=3
+mispredictions=8
+accuracy_percent=27
+simple_predictor_same_program_accuracy_percent=63
+simple_predictor_same_program_correct_predictions=7
+simple_predictor_same_program_mispredictions=4
+gshare_minus_simple_correct_predictions=-4
+gshare_minus_simple_mispredictions=4

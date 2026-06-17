@@ -1,0 +1,12 @@
+Phase 6 Branch Prediction Report
+Predictor: 1-bit PC-indexed table
+Table entries: 16
+Index: PC[5:2]
+total_conditional_branches=6
+predicted_taken=3
+predicted_not_taken=3
+actual_taken=4
+actual_not_taken=2
+correct_predictions=3
+mispredictions=3
+accuracy_percent=50

@@ -1,0 +1,17 @@
+benchmark,cache_mode,l1_enable,l2_enable,pass,cycles,retired,cpi,stalls,memory_stalls,loads,stores,l1_accesses,l1_hits,l1_misses,l1_hit_rate,l2_accesses,l2_hits,l2_misses,l2_hit_rate,backing_mem_accesses,l2_hit_latency,l2_miss_penalty
+l1_conflict_l2_hit,disabled,0,0,PASS,21,10,2.100,5,0,3,0,3,0,0,0.00,0,0,0,0.00,0,2,6
+l1_conflict_l2_hit,l1_l2,1,1,PASS,43,10,4.300,27,22,3,0,3,0,3,0.00,3,1,2,33.33,2,2,10
+l1_conflict_l2_hit,l1_l2,1,1,PASS,35,10,3.500,19,14,3,0,3,0,3,0.00,3,1,2,33.33,2,2,6
+l1_conflict_l2_hit,l1_only,1,0,PASS,30,10,3.000,14,9,3,0,3,0,3,0.00,0,0,0,0.00,3,2,6
+mixed_l1_l2_program,disabled,0,0,PASS,25,10,2.500,9,0,3,1,4,0,0,0.00,0,0,0,0.00,0,2,6
+mixed_l1_l2_program,l1_l2,1,1,PASS,45,10,4.500,29,20,3,1,4,2,2,50.00,2,0,2,0.00,2,2,10
+mixed_l1_l2_program,l1_l2,1,1,PASS,37,10,3.700,21,12,3,1,4,2,2,50.00,2,0,2,0.00,2,2,6
+mixed_l1_l2_program,l1_only,1,0,PASS,31,10,3.100,15,6,3,1,4,2,2,50.00,0,0,0,0.00,2,2,6
+repeated_l1_hit,disabled,0,0,PASS,22,10,2.200,6,0,2,0,2,0,0,0.00,0,0,0,0.00,0,2,6
+repeated_l1_hit,l1_l2,1,1,PASS,32,10,3.200,16,10,2,0,2,1,1,50.00,1,0,1,0.00,1,2,10
+repeated_l1_hit,l1_l2,1,1,PASS,28,10,2.800,12,6,2,0,2,1,1,50.00,1,0,1,0.00,1,2,6
+repeated_l1_hit,l1_only,1,0,PASS,25,10,2.500,9,3,2,0,2,1,1,50.00,0,0,0,0.00,1,2,6
+store_load_policy_check,disabled,0,0,PASS,22,10,2.200,6,0,1,1,2,0,0,0.00,0,0,0,0.00,0,2,6
+store_load_policy_check,l1_l2,1,1,PASS,32,10,3.200,16,10,1,1,2,1,1,50.00,1,0,1,0.00,1,2,10
+store_load_policy_check,l1_l2,1,1,PASS,28,10,2.800,12,6,1,1,2,1,1,50.00,1,0,1,0.00,1,2,6
+store_load_policy_check,l1_only,1,0,PASS,25,10,2.500,9,3,1,1,2,1,1,50.00,0,0,0,0.00,1,2,6

@@ -1,0 +1,65 @@
+ALLOC: cycle=12 entry=0 tid=0 op=0 rd=x5 tag=T1 rs1=x1 ready1=1 rs2=x2 ready2=1
+ISSUE: cycle=13 entry=0 tag=T1 reason=ready
+CDB: cycle=14 tag=T1 rd=x5 data=0000000c wake_sources=0
+ALLOC: cycle=15 entry=0 tid=0 op=1 rd=x6 tag=T2 rs1=x2 ready1=1 rs2=x1 ready2=1
+ISSUE: cycle=16 entry=0 tag=T2 reason=ready
+CDB: cycle=17 tag=T2 rd=x6 data=00000002 wake_sources=0
+ALLOC: cycle=18 entry=0 tid=0 op=2 rd=x7 tag=T3 rs1=x3 ready1=1 rs2=x4 ready2=1
+ISSUE: cycle=19 entry=0 tag=T3 reason=ready
+CDB: cycle=20 tag=T3 rd=x7 data=000000f0 wake_sources=0
+ALLOC: cycle=21 entry=0 tid=0 op=3 rd=x8 tag=T4 rs1=x3 ready1=1 rs2=x4 ready2=1
+ISSUE: cycle=22 entry=0 tag=T4 reason=ready
+CDB: cycle=23 tag=T4 rd=x8 data=0000fff0 wake_sources=0
+ALLOC: cycle=24 entry=0 tid=0 op=4 rd=x9 tag=T5 rs1=x3 ready1=1 rs2=x4 ready2=1
+ISSUE: cycle=25 entry=0 tag=T5 reason=ready
+CDB: cycle=26 tag=T5 rd=x9 data=0000ff00 wake_sources=0
+ALLOC: cycle=27 entry=0 tid=0 op=5 rd=x10 tag=T6 rs1=x1 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=28 entry=0 tag=T6 reason=ready
+CDB: cycle=29 tag=T6 rd=x10 data=0000000e wake_sources=0
+ALLOC: cycle=30 entry=0 tid=0 op=5 rd=x0 tag=T7 rs1=x1 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=31 entry=0 tag=T7 reason=ready
+CDB: cycle=32 tag=T7 rd=x0 data=00000068 wake_sources=0
+ALLOC: cycle=34 entry=0 tid=0 op=0 rd=x11 tag=T8 rs1=x20 ready1=0 rs2=x1 ready2=1
+ALLOC: cycle=35 entry=1 tid=0 op=5 rd=x12 tag=T9 rs1=x1 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=36 entry=1 tag=T9 reason=ready
+CDB: cycle=37 tag=T9 rd=x12 data=0000001a wake_sources=0
+CDB: cycle=38 tag=T170 rd=x20 data=00000003 wake_sources=1
+ISSUE: cycle=39 entry=0 tag=T8 reason=ready
+CDB: cycle=40 tag=T8 rd=x11 data=00000008 wake_sources=0
+ALLOC: cycle=42 entry=0 tid=0 op=0 rd=x14 tag=T10 rs1=x21 ready1=0 rs2=x1 ready2=1
+ALLOC: cycle=43 entry=1 tid=0 op=5 rd=x14 tag=T11 rs1=x1 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=44 entry=1 tag=T11 reason=ready
+CDB: cycle=45 tag=T11 rd=x14 data=00000065 wake_sources=0
+CDB: cycle=46 tag=T187 rd=x21 data=00000004 wake_sources=1
+ISSUE: cycle=47 entry=0 tag=T10 reason=ready
+CDB: cycle=48 tag=T10 rd=x14 data=00000009 wake_sources=0
+ALLOC: cycle=49 entry=0 tid=1 op=0 rd=x5 tag=T12 rs1=x1 ready1=1 rs2=x2 ready2=1
+ISSUE: cycle=50 entry=0 tag=T12 reason=ready
+CDB: cycle=51 tag=T12 rd=x5 data=0000000d wake_sources=0
+ALLOC: cycle=53 entry=0 tid=0 op=0 rd=x15 tag=T13 rs1=x22 ready1=0 rs2=x1 ready2=1
+ALLOC: cycle=54 entry=1 tid=1 op=5 rd=x15 tag=T14 rs1=x22 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=55 entry=1 tag=T14 reason=ready
+CDB: cycle=56 tag=T14 rd=x15 data=00000001 wake_sources=0
+CDB: cycle=57 tag=T204 rd=x22 data=0000002c wake_sources=0
+CDB: cycle=58 tag=T204 rd=x22 data=00000006 wake_sources=1
+ISSUE: cycle=59 entry=0 tag=T13 reason=ready
+CDB: cycle=60 tag=T13 rd=x15 data=0000000b wake_sources=0
+ALLOC: cycle=62 entry=0 tid=0 op=0 rd=x24 tag=T15 rs1=x23 ready1=0 rs2=x1 ready2=1
+ALLOC: cycle=63 entry=1 tid=0 op=0 rd=x25 tag=T16 rs1=x23 ready1=0 rs2=x1 ready2=1
+ALLOC: cycle=64 entry=2 tid=0 op=0 rd=x26 tag=T17 rs1=x23 ready1=0 rs2=x1 ready2=1
+ALLOC: cycle=65 entry=3 tid=0 op=0 rd=x27 tag=T18 rs1=x23 ready1=0 rs2=x1 ready2=1
+CDB: cycle=67 tag=T221 rd=x23 data=00000002 wake_sources=4
+ISSUE: cycle=68 entry=0 tag=T15 reason=ready
+CDB: cycle=69 tag=T15 rd=x24 data=00000007 wake_sources=0
+ISSUE: cycle=70 entry=1 tag=T16 reason=ready
+CDB: cycle=71 tag=T16 rd=x25 data=00000007 wake_sources=0
+ISSUE: cycle=72 entry=2 tag=T17 reason=ready
+CDB: cycle=73 tag=T17 rd=x26 data=00000007 wake_sources=0
+ISSUE: cycle=74 entry=3 tag=T18 reason=ready
+CDB: cycle=75 tag=T18 rd=x27 data=00000007 wake_sources=0
+ALLOC: cycle=76 entry=0 tid=0 op=5 rd=x28 tag=T19 rs1=x1 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=77 entry=0 tag=T19 reason=ready
+CDB: cycle=78 tag=T19 rd=x28 data=00000006 wake_sources=0
+ALLOC: cycle=79 entry=0 tid=0 op=5 rd=x29 tag=T20 rs1=x2 ready1=1 rs2=x0 ready2=1
+ISSUE: cycle=80 entry=0 tag=T20 reason=ready
+CDB: cycle=81 tag=T20 rd=x29 data=0000000c wake_sources=0

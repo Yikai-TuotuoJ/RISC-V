@@ -1,0 +1,6 @@
+WARNING: rtl/imem.sv:17: $readmemh(tests/benchmarks/cache/repeated_load.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile sim/phase11_cache.vcd opened for output.
+WARNING: tb/tb_rv32i_pipeline_cache.sv:286: $readmemh(tests/benchmarks/cache/store_load_check.hex): Not enough words in the file for the requested range [0:255].
+PASS: cache_benchmark=store_load_check dcache_enable=1 miss_penalty=3
+CACHEPERF: benchmark=store_load_check dcache_enable=1 icache_enable=0 miss_penalty=3 pass=PASS cycles=25 retired=10 cpi=2.500 stalls=9 memory_stalls=3 load_use_stalls=3 flushes=0 loads=1 stores=1 dcache_accesses=2 dcache_load_accesses=1 dcache_store_accesses=1 dcache_hits=1 dcache_misses=1 dcache_hit_rate=50.00 dcache_miss_penalty_cycles=3 core_cycles=25 core_retired=12
+tb/tb_rv32i_pipeline_cache.sv:328: $finish called at 256000 (1ps)

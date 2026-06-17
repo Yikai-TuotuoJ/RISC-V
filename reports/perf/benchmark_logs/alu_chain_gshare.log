@@ -1,0 +1,6 @@
+WARNING: rtl/imem.sv:17: $readmemh(tests/benchmarks/alu_chain.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile sim/phase9_benchmark.vcd opened for output.
+WARNING: tb/tb_rv32i_pipeline_perf.sv:268: $readmemh(tests/benchmarks/alu_chain.hex): Not enough words in the file for the requested range [0:255].
+PASS: benchmark=alu_chain mode=gshare
+PERF: benchmark=alu_chain mode=gshare pass=PASS cycles=54 retired=49 cpi=1.102 stalls=0 load_use_stalls=0 flushes=0 branch_jump_flushes=0 branches=0 branch_taken=0 branch_not_taken=0 branch_correct=0 mispredicts=0 accuracy=0.00 loads=0 stores=0 core_cycles=54 core_retired=50
+tb/tb_rv32i_pipeline_perf.sv:299: $finish called at 546000 (1ps)

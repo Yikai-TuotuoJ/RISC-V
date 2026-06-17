@@ -1,0 +1,18 @@
+# UCP trace: both workloads have small hot sets
+# Expected: equal partition is already near-optimal.
+A R 0x00000200
+A R 0x00000204
+B R 0x00000300
+B R 0x00000304
+A R 0x00000200
+A R 0x00000204
+B R 0x00000300
+B R 0x00000304
+A R 0x00000200
+B R 0x00000300
+A R 0x00000204
+B R 0x00000304
+A R 0x00000200
+B R 0x00000300
+A R 0x00000204
+B R 0x00000304

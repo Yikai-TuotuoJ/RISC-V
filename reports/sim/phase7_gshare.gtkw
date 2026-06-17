@@ -1,0 +1,75 @@
+[*]
+[*] GTKWave Analyzer save file for Phase 7 gshare branch prediction
+[*] Open with: gtkwave sim/phase7_gshare.vcd reports/sim/phase7_gshare.gtkw
+[dumpfile] "E:\shixi02\RISC-V\sim\phase7_gshare.vcd"
+[dumpfile_mtime] 0
+[dumpfile_size] 0
+[savefile] "E:\shixi02\RISC-V\reports\sim\phase7_gshare.gtkw"
+[timestart] 0
+[size] 1600 950
+[pos] -1 -1
+*-Clock / Reset
+@28
+tb_rv32i_pipeline_core_phase7_gshare.clk
+tb_rv32i_pipeline_core_phase7_gshare.rst_n
+@22
+tb_rv32i_pipeline_core_phase7_gshare.cycle[31:0]
+*-Pipeline Trace
+@28
+tb_rv32i_pipeline_core_phase7_gshare.trace_if_valid
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_if_pc[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_if_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase7_gshare.trace_id_valid
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_id_pc[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_id_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase7_gshare.trace_ex_valid
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_ex_pc[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_ex_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase7_gshare.trace_wb_valid
+tb_rv32i_pipeline_core_phase7_gshare.trace_wb_we
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_wb_rd[4:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_wb_wdata[31:0]
+*-Redirect / Flush
+@28
+tb_rv32i_pipeline_core_phase7_gshare.trace_flush
+tb_rv32i_pipeline_core_phase7_gshare.trace_redirect
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_redirect_target[31:0]
+*-Gshare Prediction
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_mode[1:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_ghr[3:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_index[3:0]
+@28
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_pred_taken
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_actual_taken
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_mispredict
+@22
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_pred_target[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.trace_bp_actual_target[31:0]
+*-Gshare Internals
+@22
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.ghr[3:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.fetch_index[3:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[0][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[1][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[2][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[3][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[4][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[5][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[6][1:0]
+tb_rv32i_pipeline_core_phase7_gshare.dut.u_gshare_branch_predictor.pht[7][1:0]
+*-Counters
+@22
+tb_rv32i_pipeline_core_phase7_gshare.bp_total_branches[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.bp_correct_count[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.bp_mispredict_count[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.simple_bp_correct_count[31:0]
+tb_rv32i_pipeline_core_phase7_gshare.simple_bp_mispredict_count[31:0]

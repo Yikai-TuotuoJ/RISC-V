@@ -1,0 +1,5 @@
+TRACE: trace_balanced_hotsets.txt
+UCPPERF: trace=trace_balanced_hotsets.txt policy=equal workload=A allocated_lines=2 accesses=8 hits=6 misses=2 hit_rate=75.00 estimated_penalty_cycles=20 total_policy_penalty_cycles=40 model=trace_estimated
+UCPPERF: trace=trace_balanced_hotsets.txt policy=equal workload=B allocated_lines=2 accesses=8 hits=6 misses=2 hit_rate=75.00 estimated_penalty_cycles=20 total_policy_penalty_cycles=40 model=trace_estimated
+UCPPERF: trace=trace_balanced_hotsets.txt policy=utility_guided workload=A allocated_lines=2 accesses=8 hits=6 misses=2 hit_rate=75.00 estimated_penalty_cycles=20 total_policy_penalty_cycles=40 model=trace_estimated
+UCPPERF: trace=trace_balanced_hotsets.txt policy=utility_guided workload=B allocated_lines=2 accesses=8 hits=6 misses=2 hit_rate=75.00 estimated_penalty_cycles=20 total_policy_penalty_cycles=40 model=trace_estimated

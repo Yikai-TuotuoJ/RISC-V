@@ -1,0 +1,8 @@
+read_verilog -sv rtl/reservation_station_entry.sv rtl/scoreboard_issue_model.sv
+hierarchy -check -top scoreboard_issue_model
+proc
+opt
+memory
+opt
+check
+stat

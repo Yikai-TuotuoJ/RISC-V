@@ -1,0 +1,6 @@
+WARNING: rtl/imem.sv:17: $readmemh(tests/benchmarks/mem_load_chain.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile sim/phase10_memory_latency.vcd opened for output.
+WARNING: tb/tb_rv32i_pipeline_mem_latency.sv:211: $readmemh(tests/benchmarks/mem_load_chain.hex): Not enough words in the file for the requested range [0:255].
+PASS: memory_benchmark=mem_load_chain latency=1
+MEMPERF: benchmark=mem_load_chain mem_latency=1 cache_mode=none pass=PASS cycles=29 retired=14 cpi=2.071 stalls=9 memory_stalls=0 load_use_stalls=3 load_stalls=0 store_stalls=0 flushes=0 loads=1 stores=1 core_cycles=29 core_retired=16
+tb/tb_rv32i_pipeline_mem_latency.sv:248: $finish called at 296000 (1ps)

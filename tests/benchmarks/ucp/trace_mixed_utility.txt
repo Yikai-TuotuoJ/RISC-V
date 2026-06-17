@@ -1,0 +1,22 @@
+# UCP trace: workload A has three reusable lines; workload B has one hot line plus noise
+# Expected: utility-guided allocation often gives A more than equal partition.
+A R 0x00000400
+A R 0x00000404
+A R 0x00000408
+B R 0x00002000
+B R 0x00002080
+A R 0x00000400
+A R 0x00000404
+A R 0x00000408
+B R 0x00002000
+B R 0x00002084
+A R 0x00000400
+A R 0x00000404
+A R 0x00000408
+B R 0x00002000
+B R 0x00002088
+A R 0x00000400
+A R 0x00000404
+A R 0x00000408
+B R 0x00002000
+B R 0x0000208c

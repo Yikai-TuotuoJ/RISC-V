@@ -1,0 +1,13 @@
+addi x1, x0, 0
+lw x2, 0(x1)
+lw x3, 8(x1)
+lw x4, 0(x1)
+lw x5, 8(x1)
+lw x6, 0(x1)
+lw x7, 8(x1)
+lw x8, 0(x1)
+lw x9, 8(x1)
+lw x10, 0(x1)
+lw x11, 8(x1)
+lw x12, 0(x1)
+lw x13, 8(x1)

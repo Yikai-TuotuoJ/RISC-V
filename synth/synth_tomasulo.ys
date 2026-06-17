@@ -1,0 +1,8 @@
+read_verilog -sv rtl/tomasulo_alu_model.sv rtl/tomasulo_experiment_core.sv
+hierarchy -check -top tomasulo_experiment_core
+proc
+opt
+memory
+opt
+check
+stat

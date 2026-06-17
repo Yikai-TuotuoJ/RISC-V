@@ -1,0 +1,6 @@
+WARNING: rtl/imem.sv:17: $readmemh(tests/benchmarks/cache_hierarchy/repeated_l1_hit.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile sim/phase12_cache_hierarchy.vcd opened for output.
+WARNING: tb/tb_rv32i_pipeline_cache_hierarchy.sv:150: $readmemh(tests/benchmarks/cache_hierarchy/l1_conflict_l2_hit.hex): Not enough words in the file for the requested range [0:255].
+PASS: cache_hierarchy_benchmark=l1_conflict_l2_hit l1=1 l2=1
+HIERPERF: benchmark=l1_conflict_l2_hit cache_mode=l1_l2 l1_enable=1 l2_enable=1 pass=PASS cycles=43 retired=10 cpi=4.300 stalls=27 memory_stalls=22 loads=3 stores=0 l1_accesses=3 l1_hits=0 l1_misses=3 l1_hit_rate=0.00 l2_accesses=3 l2_hits=1 l2_misses=2 l2_hit_rate=33.33 backing_mem_accesses=2 l2_hit_latency=2 l2_miss_penalty=10
+tb/tb_rv32i_pipeline_cache_hierarchy.sv:174: $finish called at 436000 (1ps)

@@ -1,0 +1,78 @@
+[*]
+[*] GTKWave Analyzer save file for Phase 6 branch prediction
+[*] Open with: gtkwave sim/phase6_branch_predictor.vcd reports/sim/phase6_branch_prediction.gtkw
+[dumpfile] "E:\shixi02\RISC-V\sim\phase6_branch_predictor.vcd"
+[dumpfile_mtime] 0
+[dumpfile_size] 0
+[savefile] "E:\shixi02\RISC-V\reports\sim\phase6_branch_prediction.gtkw"
+[timestart] 0
+[size] 1600 950
+[pos] -1 -1
+*-Clock / Reset / Testbench
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.clk
+tb_rv32i_pipeline_core_phase6_branch_predictor.rst_n
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.cycle[31:0]
+*-Pipeline Stage Trace
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_if_valid
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_if_pc[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_if_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_id_valid
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_id_pc[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_id_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_ex_valid
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_ex_pc[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_ex_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_mem_valid
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_mem_pc[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_mem_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_wb_valid
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_wb_we
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_wb_pc[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_wb_instr[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_wb_rd[4:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_wb_wdata[31:0]
+*-Redirect / Flush
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_stall
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_flush
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_redirect
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_redirect_target[31:0]
+*-Branch Prediction Trace
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_bp_pred_taken
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_bp_actual_taken
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_bp_mispredict
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_bp_pred_target[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.trace_bp_actual_target[31:0]
+*-Branch Prediction Counters
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_total_branches[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_pred_taken_count[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_pred_not_taken_count[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_actual_taken_count[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_actual_not_taken_count[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_correct_count[31:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.bp_mispredict_count[31:0]
+*-Predictor Internals
+@22
+tb_rv32i_pipeline_core_phase6_branch_predictor.dut.u_branch_predictor.fetch_index[3:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.dut.u_branch_predictor.update_index[3:0]
+tb_rv32i_pipeline_core_phase6_branch_predictor.dut.u_branch_predictor.pred_table[15:0]
+@28
+tb_rv32i_pipeline_core_phase6_branch_predictor.dut.u_branch_predictor.predict_taken
+tb_rv32i_pipeline_core_phase6_branch_predictor.dut.bp_update_en
+tb_rv32i_pipeline_core_phase6_branch_predictor.dut.bp_update_taken

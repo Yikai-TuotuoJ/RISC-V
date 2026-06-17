@@ -1,0 +1,6 @@
+WARNING: rtl/imem.sv:17: $readmemh(tests/benchmarks/alu_chain.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile sim/phase9_benchmark.vcd opened for output.
+WARNING: tb/tb_rv32i_pipeline_perf.sv:268: $readmemh(tests/benchmarks/mixed_program.hex): Not enough words in the file for the requested range [0:255].
+PASS: benchmark=mixed_program mode=none
+PERF: benchmark=mixed_program mode=none pass=PASS cycles=34 retired=27 cpi=1.259 stalls=0 load_use_stalls=0 flushes=1 branch_jump_flushes=1 branches=1 branch_taken=1 branch_not_taken=0 branch_correct=0 mispredicts=1 accuracy=0.00 loads=1 stores=1 core_cycles=34 core_retired=28
+tb/tb_rv32i_pipeline_perf.sv:299: $finish called at 346000 (1ps)

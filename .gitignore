@@ -1,0 +1,13 @@
+# Generated simulation artifacts
+sim/*.vvp
+sim/*.vcd
+
+# Generated reports and temporary Yosys scripts
+reports/*.log
+reports/*.ys
+
+# Common editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

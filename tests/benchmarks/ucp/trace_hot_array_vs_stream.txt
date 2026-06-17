@@ -1,0 +1,23 @@
+# UCP trace: hot array workload A vs streaming workload B
+# format: <workload> <op> <address>
+# A repeatedly touches two hot words; B streams through many unique words.
+A R 0x00000100
+A R 0x00000104
+B R 0x00001000
+A R 0x00000100
+B R 0x00001004
+A R 0x00000104
+B R 0x00001008
+A R 0x00000100
+B R 0x0000100c
+A R 0x00000104
+B R 0x00001010
+A R 0x00000100
+B R 0x00001014
+A R 0x00000104
+B R 0x00001018
+A R 0x00000100
+B R 0x0000101c
+A R 0x00000104
+A R 0x00000100
+A R 0x00000104

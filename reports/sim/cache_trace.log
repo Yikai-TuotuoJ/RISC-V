@@ -1,0 +1,104 @@
+== bench=repeated_load dcache_enable=0 miss_penalty=3 ==
+CACHE cycle=7 bench=repeated_load enable=0 access=1 load=1 store=0 addr=00000040 hit=0 miss=0 stall=0 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=8 bench=repeated_load enable=0 access=1 load=1 store=0 addr=00000040 hit=0 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=0
+== bench=store_load_check dcache_enable=0 miss_penalty=3 ==
+CACHE cycle=8 bench=store_load_check enable=0 access=1 load=0 store=1 addr=00000050 hit=0 miss=0 stall=0 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=9 bench=store_load_check enable=0 access=1 load=1 store=0 addr=00000050 hit=0 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=0
+== bench=conflict_loads dcache_enable=0 miss_penalty=3 ==
+CACHE cycle=7 bench=conflict_loads enable=0 access=1 load=1 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=8 bench=conflict_loads enable=0 access=1 load=1 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=0
+CACHE cycle=9 bench=conflict_loads enable=0 access=1 load=1 store=0 addr=00000010 hit=0 miss=0 stall=0 fill=0 accesses=2 hits=0 misses=0
+CACHE cycle=10 bench=conflict_loads enable=0 access=1 load=1 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=0 accesses=3 hits=0 misses=0
+== bench=mixed_cache_program dcache_enable=0 miss_penalty=3 ==
+CACHE cycle=8 bench=mixed_cache_program enable=0 access=1 load=0 store=1 addr=00000060 hit=0 miss=0 stall=0 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=9 bench=mixed_cache_program enable=0 access=1 load=1 store=0 addr=00000060 hit=0 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=0
+CACHE cycle=17 bench=mixed_cache_program enable=0 access=1 load=0 store=1 addr=00000064 hit=0 miss=0 stall=0 fill=0 accesses=2 hits=0 misses=0
+CACHE cycle=18 bench=mixed_cache_program enable=0 access=1 load=1 store=0 addr=00000064 hit=0 miss=0 stall=0 fill=0 accesses=3 hits=0 misses=0
+== bench=repeated_load dcache_enable=1 miss_penalty=3 ==
+CACHE cycle=7 bench=repeated_load enable=1 access=1 load=1 store=0 addr=00000040 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=8 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=9 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=repeated_load enable=1 access=1 load=1 store=0 addr=00000040 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+== bench=store_load_check dcache_enable=1 miss_penalty=3 ==
+CACHE cycle=8 bench=store_load_check enable=1 access=1 load=0 store=1 addr=00000050 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=9 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=store_load_check enable=1 access=1 load=1 store=0 addr=00000050 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+== bench=conflict_loads dcache_enable=1 miss_penalty=3 ==
+CACHE cycle=7 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000000 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=8 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=9 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000000 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000010 hit=0 miss=1 stall=1 fill=0 accesses=2 hits=1 misses=1
+CACHE cycle=13 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=14 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=15 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=0 fill=1 accesses=3 hits=1 misses=2
+CACHE cycle=16 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000000 hit=0 miss=1 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=17 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=4 hits=1 misses=3
+CACHE cycle=18 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=4 hits=1 misses=3
+CACHE cycle=19 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=1 accesses=4 hits=1 misses=3
+== bench=mixed_cache_program dcache_enable=1 miss_penalty=3 ==
+CACHE cycle=8 bench=mixed_cache_program enable=1 access=1 load=0 store=1 addr=00000060 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=9 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=mixed_cache_program enable=1 access=1 load=1 store=0 addr=00000060 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=20 bench=mixed_cache_program enable=1 access=1 load=0 store=1 addr=00000064 hit=0 miss=1 stall=1 fill=0 accesses=2 hits=1 misses=1
+CACHE cycle=21 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=22 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=23 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=0 fill=1 accesses=3 hits=1 misses=2
+CACHE cycle=24 bench=mixed_cache_program enable=1 access=1 load=1 store=0 addr=00000064 hit=1 miss=0 stall=0 fill=0 accesses=3 hits=1 misses=2
+== bench=repeated_load dcache_enable=1 miss_penalty=5 ==
+CACHE cycle=7 bench=repeated_load enable=1 access=1 load=1 store=0 addr=00000040 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=8 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=9 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=repeated_load enable=1 access=0 load=0 store=0 addr=00000040 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=13 bench=repeated_load enable=1 access=1 load=1 store=0 addr=00000040 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+== bench=store_load_check dcache_enable=1 miss_penalty=5 ==
+CACHE cycle=8 bench=store_load_check enable=1 access=1 load=0 store=1 addr=00000050 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=9 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=13 bench=store_load_check enable=1 access=0 load=0 store=0 addr=00000050 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=14 bench=store_load_check enable=1 access=1 load=1 store=0 addr=00000050 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+== bench=conflict_loads dcache_enable=1 miss_penalty=5 ==
+CACHE cycle=7 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000000 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=8 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=9 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=13 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000000 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=14 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000010 hit=0 miss=1 stall=1 fill=0 accesses=2 hits=1 misses=1
+CACHE cycle=15 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=16 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=17 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=18 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=19 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000010 hit=0 miss=0 stall=0 fill=1 accesses=3 hits=1 misses=2
+CACHE cycle=20 bench=conflict_loads enable=1 access=1 load=1 store=0 addr=00000000 hit=0 miss=1 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=21 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=4 hits=1 misses=3
+CACHE cycle=22 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=4 hits=1 misses=3
+CACHE cycle=23 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=4 hits=1 misses=3
+CACHE cycle=24 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=1 fill=0 accesses=4 hits=1 misses=3
+CACHE cycle=25 bench=conflict_loads enable=1 access=0 load=0 store=0 addr=00000000 hit=0 miss=0 stall=0 fill=1 accesses=4 hits=1 misses=3
+== bench=mixed_cache_program dcache_enable=1 miss_penalty=5 ==
+CACHE cycle=8 bench=mixed_cache_program enable=1 access=1 load=0 store=1 addr=00000060 hit=0 miss=1 stall=1 fill=0 accesses=0 hits=0 misses=0
+CACHE cycle=9 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=10 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=11 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=12 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=1 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=13 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000060 hit=0 miss=0 stall=0 fill=1 accesses=1 hits=0 misses=1
+CACHE cycle=14 bench=mixed_cache_program enable=1 access=1 load=1 store=0 addr=00000060 hit=1 miss=0 stall=0 fill=0 accesses=1 hits=0 misses=1
+CACHE cycle=22 bench=mixed_cache_program enable=1 access=1 load=0 store=1 addr=00000064 hit=0 miss=1 stall=1 fill=0 accesses=2 hits=1 misses=1
+CACHE cycle=23 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=24 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=25 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=26 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=1 fill=0 accesses=3 hits=1 misses=2
+CACHE cycle=27 bench=mixed_cache_program enable=1 access=0 load=0 store=0 addr=00000064 hit=0 miss=0 stall=0 fill=1 accesses=3 hits=1 misses=2
+CACHE cycle=28 bench=mixed_cache_program enable=1 access=1 load=1 store=0 addr=00000064 hit=1 miss=0 stall=0 fill=0 accesses=3 hits=1 misses=2

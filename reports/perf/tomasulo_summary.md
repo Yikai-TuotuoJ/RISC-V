@@ -1,0 +1,32 @@
+# Phase 17 Tomasulo-Style Summary
+
+| Metric | Value |
+| --- | ---: |
+| `test` | phase17 |
+| `accepted` | 20 |
+| `rs_allocs` | 20 |
+| `rs_full_stalls` | 1 |
+| `ready_observed` | 32 |
+| `issued` | 20 |
+| `ooo_issue_events` | 3 |
+| `broadcasts` | 25 |
+| `wakeups` | 7 |
+| `stale_tag_ignored` | 2 |
+| `completed` | 20 |
+| `unsupported` | 1 |
+| `thread0_accepted` | 18 |
+| `thread1_accepted` | 2 |
+| `thread0_issued` | 18 |
+| `thread1_issued` | 2 |
+| `thread0_completed` | 18 |
+| `thread1_completed` | 2 |
+| `checks` | 52 |
+| `errors` | 0 |
+| `pass` | PASS |
+
+## Interpretation
+
+- `ooo_issue_events` counts cases where a younger ready instruction issued while an older entry waited.
+- `wakeups` counts operand sources made ready by CDB-style broadcasts.
+- `stale_tag_ignored` proves older producers cannot clobber a newer architectural destination tag.
+- This is a constrained scheduling experiment; it does not include a ROB, speculative commit, or a load/store queue.

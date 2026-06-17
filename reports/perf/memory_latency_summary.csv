@@ -1,0 +1,10 @@
+log,benchmark,mem_latency,cache_mode,pass,cycles,retired,cpi,stalls,memory_stalls,load_use_stalls,load_stalls,store_stalls,flushes,loads,stores,core_cycles,core_retired
+mem_load_chain_lat1.log,mem_load_chain,1,none,PASS,29,14,2.071,9,0,3,0,0,0,1,1,29,16
+mem_load_chain_lat3.log,mem_load_chain,3,none,PASS,33,14,2.357,13,4,3,2,2,0,1,1,33,16
+mem_load_chain_lat5.log,mem_load_chain,5,none,PASS,37,14,2.643,17,8,3,4,4,0,1,1,37,16
+mem_mixed_latency_lat1.log,mem_mixed_latency,1,none,PASS,37,17,2.176,12,0,6,0,0,1,2,2,37,19
+mem_mixed_latency_lat3.log,mem_mixed_latency,3,none,PASS,45,17,2.647,20,8,6,4,4,1,2,2,45,19
+mem_mixed_latency_lat5.log,mem_mixed_latency,5,none,PASS,53,17,3.118,28,16,6,8,8,1,2,2,53,19
+mem_store_load_lat1.log,mem_store_load,1,none,PASS,27,16,1.688,5,0,3,0,0,0,2,2,27,18
+mem_store_load_lat3.log,mem_store_load,3,none,PASS,35,16,2.188,13,8,3,4,4,0,2,2,35,18
+mem_store_load_lat5.log,mem_store_load,5,none,PASS,43,16,2.688,21,16,3,8,8,0,2,2,43,18

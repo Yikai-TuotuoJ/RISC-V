@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2026-05-28T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="cacheHierarchySignals" name="Phase 12 Cache Signal Connections">
+    <mxGraphModel dx="1450" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cpu" value="rv32i_pipeline_core.sv&#xa;MEM stage / EX-MEM register&#xa;&#xa;ex_mem_memory_access&#xa;ex_mem_is_load / ex_mem_is_store&#xa;ex_mem_alu_y = address&#xa;ex_mem_rs2_data = store data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dcache" value="direct_mapped_dcache.sv&#xa;request / stall controller&#xa;&#xa;req_valid&#xa;req_load / req_store&#xa;addr / wdata&#xa;rdata / stall" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="410" y="290" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="L1 D-cache arrays&#xa;4 direct-mapped lines&#xa;1 word per line&#xa;&#xa;valid[index]&#xa;tag[index]&#xa;data[index]&#xa;&#xa;index = addr[3:2]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="760" y="90" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="L2-style cache arrays&#xa;8 direct-mapped lines&#xa;1 word per line&#xa;&#xa;l2_valid[l2_index]&#xa;l2_tag[l2_index]&#xa;l2_data[l2_index]&#xa;&#xa;l2_index = addr[4:2]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="760" y="310" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="mem" value="Backing memory array&#xa;mem[word_addr]&#xa;&#xa;simple word-addressed memory&#xa;preloaded/checked by testbench" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="760" y="570" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wb" value="Pipeline writeback path&#xa;&#xa;mem_dmem_rdata&#xa;captured into MEM/WB&#xa;selected by WB_MEM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="60" y="560" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="trace" value="Trace / counters / reports&#xa;&#xa;trace_dcache_*&#xa;trace_l2_*&#xa;perf_dcache_*&#xa;perf_l2_*&#xa;perf_backing_access_count&#xa;&#xa;reports/sim/cache_hierarchy_trace.log&#xa;reports/perf/cache_hierarchy_summary.*" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="1070" y="290" width="280" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_req" value="req_valid, req_load, req_store&#xa;addr, wdata" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="cpu" target="dcache">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_stall" value="stall = dcache_stall&#xa;holds PC/IF-ID/ID-EX/EX-MEM&#xa;bubbles MEM-WB" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#b85450;fontColor=#b85450" edge="1" parent="1" source="dcache" target="cpu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="360" y="470" /><mxPoint x="360" y="470" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_l1" value="lookup on every L1-enabled access&#xa;line_hit = valid &amp;&amp; tag match" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="dcache" target="l1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_l1_fill" value="fill/update L1&#xa;on L2 response or store" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1" edge="1" parent="1" source="l2" target="l1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_l2" value="L1 miss request&#xa;check L2 when L2_ENABLE=1" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="dcache" target="l2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_mem" value="L2 miss / cache disabled path&#xa;read or write backing memory" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="l2" target="mem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_mem_fill" value="fill L2 then L1&#xa;from backing memory" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1" edge="1" parent="1" source="mem" target="l2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_rdata" value="rdata / mem_dmem_rdata" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="dcache" target="wb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_trace" value="event pulses and counters" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" edge="1" parent="1" source="dcache" target="trace">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="policy" value="Store policy&#xa;write-through + write-allocate&#xa;&#xa;Store hit: update L1 + backing memory; update L2 if present.&#xa;Store miss: wait through L2/backing path, then fill/update levels." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="610" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

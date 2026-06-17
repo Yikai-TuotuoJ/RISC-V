@@ -1,0 +1,12 @@
+read_verilog -sv rtl/ooo_experiment_core.sv
+hierarchy -check -top ooo_experiment_core
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+check
+stat

@@ -1,0 +1,5 @@
+TRACE: trace_mixed_utility.txt
+UCPPERF: trace=trace_mixed_utility.txt policy=equal workload=A allocated_lines=2 accesses=12 hits=0 misses=12 hit_rate=0.00 estimated_penalty_cycles=120 total_policy_penalty_cycles=170 model=trace_estimated
+UCPPERF: trace=trace_mixed_utility.txt policy=equal workload=B allocated_lines=2 accesses=8 hits=3 misses=5 hit_rate=37.50 estimated_penalty_cycles=50 total_policy_penalty_cycles=170 model=trace_estimated
+UCPPERF: trace=trace_mixed_utility.txt policy=utility_guided workload=A allocated_lines=3 accesses=12 hits=9 misses=3 hit_rate=75.00 estimated_penalty_cycles=30 total_policy_penalty_cycles=110 model=trace_estimated
+UCPPERF: trace=trace_mixed_utility.txt policy=utility_guided workload=B allocated_lines=1 accesses=8 hits=0 misses=8 hit_rate=0.00 estimated_penalty_cycles=80 total_policy_penalty_cycles=110 model=trace_estimated

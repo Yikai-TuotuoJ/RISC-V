@@ -1,0 +1,5 @@
+TRACE: trace_hot_array_vs_stream.txt
+UCPPERF: trace=trace_hot_array_vs_stream.txt policy=equal workload=A allocated_lines=2 accesses=12 hits=10 misses=2 hit_rate=83.33 estimated_penalty_cycles=20 total_policy_penalty_cycles=100 model=trace_estimated
+UCPPERF: trace=trace_hot_array_vs_stream.txt policy=equal workload=B allocated_lines=2 accesses=8 hits=0 misses=8 hit_rate=0.00 estimated_penalty_cycles=80 total_policy_penalty_cycles=100 model=trace_estimated
+UCPPERF: trace=trace_hot_array_vs_stream.txt policy=utility_guided workload=A allocated_lines=2 accesses=12 hits=10 misses=2 hit_rate=83.33 estimated_penalty_cycles=20 total_policy_penalty_cycles=100 model=trace_estimated
+UCPPERF: trace=trace_hot_array_vs_stream.txt policy=utility_guided workload=B allocated_lines=2 accesses=8 hits=0 misses=8 hit_rate=0.00 estimated_penalty_cycles=80 total_policy_penalty_cycles=100 model=trace_estimated

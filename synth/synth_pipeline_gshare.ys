@@ -1,0 +1,19 @@
+read_verilog -sv rtl/alu.sv rtl/decoder.sv rtl/regfile.sv rtl/imem.sv rtl/dmem_stub.sv rtl/branch_predictor.sv rtl/gshare_branch_predictor.sv rtl/direct_mapped_dcache.sv rtl/rv32i_pipeline_core.sv rtl/top_pipeline_gshare.sv
+hierarchy -check -top top_pipeline_gshare
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+abc -fast
+opt
+stat
+check
+write_verilog -noattr reports/synth/netlists/top_pipeline_gshare_synth.v
+write_json reports/synth/json/top_pipeline_gshare.json
+
+
+

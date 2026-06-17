@@ -1,0 +1,13 @@
+addi x1, x0, 32
+lw x2, 0(x1)
+lw x3, 4(x1)
+lw x4, 8(x1)
+lw x5, 12(x1)
+lw x6, 16(x1)
+lw x7, 20(x1)
+lw x8, 24(x1)
+lw x9, 28(x1)
+lw x10, 32(x1)
+lw x11, 36(x1)
+lw x12, 40(x1)
+lw x13, 44(x1)

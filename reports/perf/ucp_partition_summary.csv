@@ -1,0 +1,13 @@
+benchmark_or_trace,policy,workload,allocated_lines,accesses,hits,misses,hit_rate,miss_rate,estimated_penalty_cycles,total_policy_hits,total_policy_misses,total_policy_penalty_cycles,model_type
+trace_balanced_hotsets.txt,equal,A,2,8,6,2,75.00,25.00,20,12,4,40,trace_estimated
+trace_balanced_hotsets.txt,equal,B,2,8,6,2,75.00,25.00,20,12,4,40,trace_estimated
+trace_balanced_hotsets.txt,utility_guided,A,2,8,6,2,75.00,25.00,20,12,4,40,trace_estimated
+trace_balanced_hotsets.txt,utility_guided,B,2,8,6,2,75.00,25.00,20,12,4,40,trace_estimated
+trace_hot_array_vs_stream.txt,equal,A,2,12,10,2,83.33,16.67,20,10,10,100,trace_estimated
+trace_hot_array_vs_stream.txt,equal,B,2,8,0,8,0.00,100.00,80,10,10,100,trace_estimated
+trace_hot_array_vs_stream.txt,utility_guided,A,2,12,10,2,83.33,16.67,20,10,10,100,trace_estimated
+trace_hot_array_vs_stream.txt,utility_guided,B,2,8,0,8,0.00,100.00,80,10,10,100,trace_estimated
+trace_mixed_utility.txt,equal,A,2,12,0,12,0.00,100.00,120,3,17,170,trace_estimated
+trace_mixed_utility.txt,equal,B,2,8,3,5,37.50,62.50,50,3,17,170,trace_estimated
+trace_mixed_utility.txt,utility_guided,A,3,12,9,3,75.00,25.00,30,9,11,110,trace_estimated
+trace_mixed_utility.txt,utility_guided,B,1,8,0,8,0.00,100.00,80,9,11,110,trace_estimated

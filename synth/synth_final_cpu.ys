@@ -1,0 +1,12 @@
+read_verilog -sv rtl/gshare_branch_predictor.sv
+read_verilog -sv rtl/rv32i_final_cpu_top.sv
+hierarchy -top rv32i_final_cpu_top
+proc
+opt
+memory
+opt
+techmap
+opt
+check
+stat
+write_verilog reports/synth/final_cpu_netlist.v

@@ -1,0 +1,162 @@
+[*]
+[*] GTKWave Analyzer v3.3.120 save file for Phase 5 pipeline structure
+[*] Open with: gtkwave sim/phase5_pipeline_trace.vcd reports/sim/phase5_pipeline_structure.gtkw
+[dumpfile] "E:\shixi02\RISC-V\sim\phase5_pipeline_trace.vcd"
+[dumpfile_mtime] 0
+[dumpfile_size] 0
+[savefile] "E:\shixi02\RISC-V\reports\sim\phase5_pipeline_structure.gtkw"
+[timestart] 0
+[size] 1600 950
+[pos] -1 -1
+*-Clock / Reset / Counters
+@28
+tb_rv32i_pipeline_core_phase5_trace.clk
+tb_rv32i_pipeline_core_phase5_trace.rst_n
+@22
+tb_rv32i_pipeline_core_phase5_trace.cycle[31:0]
+tb_rv32i_pipeline_core_phase5_trace.redirect_count[31:0]
+tb_rv32i_pipeline_core_phase5_trace.wb_count[31:0]
+*-Architectural Pipeline Trace Ports
+@28
+tb_rv32i_pipeline_core_phase5_trace.trace_if_valid
+@22
+tb_rv32i_pipeline_core_phase5_trace.trace_if_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_if_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase5_trace.trace_id_valid
+@22
+tb_rv32i_pipeline_core_phase5_trace.trace_id_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_id_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase5_trace.trace_ex_valid
+@22
+tb_rv32i_pipeline_core_phase5_trace.trace_ex_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_ex_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase5_trace.trace_mem_valid
+@22
+tb_rv32i_pipeline_core_phase5_trace.trace_mem_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_mem_instr[31:0]
+@28
+tb_rv32i_pipeline_core_phase5_trace.trace_wb_valid
+tb_rv32i_pipeline_core_phase5_trace.trace_wb_we
+@22
+tb_rv32i_pipeline_core_phase5_trace.trace_wb_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_wb_instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_wb_rd[4:0]
+tb_rv32i_pipeline_core_phase5_trace.trace_wb_wdata[31:0]
+*-Control Redirect / Flush
+@28
+tb_rv32i_pipeline_core_phase5_trace.trace_stall
+tb_rv32i_pipeline_core_phase5_trace.trace_flush
+tb_rv32i_pipeline_core_phase5_trace.trace_redirect
+@22
+tb_rv32i_pipeline_core_phase5_trace.trace_redirect_target[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_branch_target[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_jalr_target[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_branch_equal
+*-IF / ID Pipeline Register
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.if_instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.if_pc_plus4[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.if_id_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.if_id_instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.if_id_pc_plus4[31:0]
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.if_id_valid
+*-Decoder Inputs / Fields
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.opcode[6:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.funct3[2:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.funct7[6:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.rs1[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.rs2[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.rd[4:0]
+*-Decoder Control Outputs
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.reg_write
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.mem_write
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.branch
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.branch_ne
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.jump
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.jump_reg
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.alu_src_imm
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.alu_src_pc
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.illegal_instr
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.alu_op[2:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.wb_sel[1:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_decoder.imm[31:0]
+*-ID / EX Pipeline Register
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_valid
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_reg_write
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_mem_write
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_branch
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_branch_ne
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_jump
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_jump_reg
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_rs1_data[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_rs2_data[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_imm[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_rd[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_alu_op[2:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.id_ex_wb_sel[1:0]
+*-EX / ALU
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_alu_a[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_alu_b[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_alu_y[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_alu.a[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_alu.b[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_alu.alu_op[2:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_alu.y[31:0]
+*-EX / MEM Pipeline Register
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_valid
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_reg_write
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_mem_write
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_alu_y[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_rs2_data[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_rd[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.ex_mem_wb_sel[1:0]
+*-Data Memory
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.u_dmem.we
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.u_dmem.addr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_dmem.wdata[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_dmem.rdata[31:0]
+*-MEM / WB Pipeline Register and Writeback
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_valid
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_reg_write
+tb_rv32i_pipeline_core_phase5_trace.dut.wb_we
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_pc[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_instr[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_alu_y[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_dmem_rdata[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_imm[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_pc_plus4[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_rd[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.mem_wb_wb_sel[1:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.wb_data[31:0]
+*-Regfile Read / Write Interface
+@28
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.we
+@22
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.raddr1[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.raddr2[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.rdata1[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.rdata2[31:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.waddr[4:0]
+tb_rv32i_pipeline_core_phase5_trace.dut.u_regfile.wdata[31:0]

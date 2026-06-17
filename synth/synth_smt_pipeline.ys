@@ -1,0 +1,11 @@
+read_verilog -sv rtl/alu.sv
+read_verilog -sv rtl/decoder.sv
+read_verilog -sv rtl/imem.sv
+read_verilog -sv rtl/threaded_regfile.sv
+read_verilog -sv rtl/direct_mapped_dcache.sv
+read_verilog -sv rtl/rv32i_smt_pipeline_core.sv
+hierarchy -top rv32i_smt_pipeline_core
+proc
+opt
+check
+stat
