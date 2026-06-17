@@ -80,7 +80,7 @@ reports/phase14_ucp/ucp_counter_consistency.md
 reports/phase14_ucp/ucp_trace.log
 ```
 
-## Interview-Oriented Analysis
+## Design Analysis
 
 Private L1 caches are common because the closest cache is latency-sensitive and usually tied to one core's immediate load/store path. In this project, private L1 banks are selected by logical stream ID, which models the capacity-isolation idea before the project has real multicore or SMT execution.
 
@@ -129,4 +129,5 @@ dynamic UCP:      cycles=462 L3 hits=21 backing accesses=15 final alloc=3/5
 fixed 6/2 policy: cycles=582 L3 hits=6  backing accesses=30
 ```
 
-This is the right interview framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
+This is the right Design Framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
+

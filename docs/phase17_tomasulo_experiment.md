@@ -109,9 +109,9 @@ Reports:
 - `reports/sim/tomasulo_trace.log`
 - `sim/phase17_tomasulo.vcd`
 
-## Interview-Oriented Explanation
+## Design Explanation
 
-The useful interview framing is:
+The useful Design Framing is:
 
 - A scoreboard tells whether registers are busy, but Tomasulo-style scheduling needs reservation stations that remember each instruction's operands, tags, and readiness.
 - A reservation station can hold an instruction until its operands arrive. When a producer completes, a CDB-like broadcast wakes all matching consumers.

@@ -74,7 +74,7 @@ Outputs:
 - `reports/sim/ooo_trace.log`
 - `sim/phase20_ooo.vcd`
 
-## Interview-Oriented Explanation
+## Design Explanation
 
 A good concise framing:
 
@@ -90,3 +90,4 @@ Important limitations to say clearly:
 - no cache/UCP integration in this final OOO core
 
 This phase demonstrates architecture concepts and verification discipline, not production CPU completeness.
+

@@ -106,7 +106,7 @@ Artifacts:
 - `reports/sim/scoreboard_trace.log`
 - `sim/phase16_scoreboard.vcd`
 
-## Interview-Oriented Explanation
+## Design Explanation
 
 A scoreboard answers: "Which older producer currently owns each source value?"
 A reservation station answers: "Has each operand arrived, and is this operation
@@ -121,3 +121,4 @@ retire in architectural order with precise exceptions.
 
 The honest resume statement is that this phase models and validates dependency
 tracking and broadcast wakeup concepts as preparation for dynamic scheduling.
+

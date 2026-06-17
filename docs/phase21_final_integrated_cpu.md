@@ -63,10 +63,11 @@ Generated artifacts include:
 - `sim/final_cpu.vcd`
 - `reports/synth/final_cpu_yosys.log`
 
-## Interview Framing
+## Design Framing
 
 Good explanation:
 
 > I consolidated the earlier single-purpose experiments into a product-style RTL top with only memory-bus ports. The verification environment moved debug visibility out of DUT IO and into hierarchical monitors, similar in spirit to UVM monitors and scoreboards but kept compatible with open-source simulators. The design demonstrates how SMT thread tags, branch prediction, ROB/RS/LSQ concepts, and cache/UCP policies interact, while the reports document what is simplified versus production OOO CPUs.
 
 Do not claim full industrial UVM, production out-of-order execution, precise exception machinery, cache coherence, or signoff verification.
+

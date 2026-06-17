@@ -46,9 +46,10 @@ The runner generates deterministic SMT programs, runs six simulations, fails if 
 - `reports/sim/smt_trace.log`
 - `reports/sim/smt_ucp_trace.log`
 
-## Interview Notes
+## Design Notes
 
 The important idea is metadata discipline. Once multiple logical instruction streams share a pipeline, the pipeline must know which architectural context each in-flight instruction belongs to. That means thread IDs are not just debug labels; they are part of the correctness path for register reads, writeback, hazards, branch redirect, counters, and cache attribution.
 
 This is not production SMT. There is no register renaming, ROB, superscalar issue, or out-of-order scheduling. It is an in-order two-thread experiment that demonstrates the core RTL concept: thread-tagged pipeline state and thread-aware memory/cache accounting.
+
 

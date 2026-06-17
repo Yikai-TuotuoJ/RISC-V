@@ -16,7 +16,7 @@ The design still has one CPU pipeline. Logical cores/streams are derived from ad
 | utility_pressure | 0 | PASS | 205 | 7.885 | 0/13 | 0/13 | 4/4 | 2/7 | 1/3 | 10 | 0 |
 | utility_pressure | 1 | PASS | 181 | 6.962 | 0/13 | 0/13 | 6/2 | 6/3 | 0/4 | 7 | 0 |
 
-## Interview-Oriented Analysis
+## Design Analysis
 
 - On `utility_pressure`, utility-guided L3 partitioning increased L3 hits by 3 and reduced backing-memory accesses by 3 versus equal partitioning.
 - The same benchmark reduced simulated cycles by 24 in this controlled setup, because fewer L3 misses reached backing memory.
@@ -27,3 +27,4 @@ The design still has one CPU pipeline. Logical cores/streams are derived from ad
 - Correctness checks include architectural register state, x0, no illegal instruction, counter consistency, and partition quota checks, not just hit-rate improvements.
 - Policy `2` adds a simplified dynamic UCP monitor that uses shadow tags, exhaustive split search, and safe L3 invalidation on repartition.
 - This is still an educational two-stream UCP model, not production cache QoS, coherence, or multicore runtime management.
+

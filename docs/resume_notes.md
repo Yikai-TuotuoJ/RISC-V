@@ -161,7 +161,7 @@ dynamic UCP:      cycles=462 L3 hits=21 backing accesses=15 final alloc=3/5
 fixed 6/2 policy: cycles=582 L3 hits=6  backing accesses=30
 ```
 
-This is the right interview framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
+This is the right Design Framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
 
 ## Phase 15 Resume Notes
 
@@ -251,3 +251,95 @@ Avoid wording:
 - Completed full industrial UVM verification.
 - Implemented precise exceptions, full physical-register renaming, or cache coherence.
 - Achieved timing closure or signoff-quality verification.
+
+
+## Project Discussion Preparation Notes
+
+This section collects deeper technical points worth being ready to explain when presenting the project. Keep the framing precise: the project demonstrates front-end RTL architecture practice, open-source verification discipline, and careful documentation, not production signoff.
+
+### Strong High-Level Project Framing
+
+- Built a Windows-native SystemVerilog RISC-V RTL project that grew in phases from a minimal single-cycle RV32I subset to a product-style final integrated CPU target.
+- Preserved earlier cores as references while adding separate experiments for pipeline behavior, branch prediction, cache hierarchy, UCP-style partitioning, SMT-style thread tagging, scoreboard readiness, Tomasulo-style scheduling, ROB commit, LSQ ordering, and a final integrated target.
+- Used self-checking Icarus simulations, VCD waveforms, Verilator lint, and Yosys synthesis sanity reports to keep each phase reproducible.
+- Kept claims honest: this is an educational open-source RTL project, not full RV32I compliance, physical design signoff, production OOO execution, industrial UVM, or cache-coherent multicore design.
+
+### Final Integrated Target Details To Mention
+
+- `rv32i_final_cpu_top.sv` exposes only product-style ports: clock/reset, instruction memory request/response, and data memory request/response.
+- Debug-only and scoreboard-only DUT pins were removed from the final target; monitors observe internal state hierarchically from the testbench.
+- The final validation environment is UVM-inspired in structure but OSS-compatible: memory driver, monitor-style trace collection, reference checks, and scoreboard-like final checks without `uvm_pkg`, classes, DPI, or proprietary simulators.
+- The final test flow runs 96 self-checking checks and generates Markdown/CSV reports, trace logs, and VCD waveforms.
+- Yosys synthesis sanity confirms the RTL-only final top is structurally synthesizable, while the testbench monitors remain outside synthesis.
+
+### Pipeline And Control-Flow Points
+
+- The project starts with a single-cycle reference to make instruction behavior easy to validate before adding pipeline state.
+- The 5-stage pipeline separates IF, ID, EX, MEM, and WB and uses valid bits, stalls, and flushes to make control movement observable.
+- Branch handling begins with static/no-prediction behavior, then simple prediction, then gshare.
+- Gshare uses global branch history XORed with PC index bits to reduce aliasing compared with PC-only indexing.
+- Misprediction recovery redirects the PC and prevents wrong-path architectural commit.
+
+### OOO Concept Points
+
+- Reservation stations hold waiting operations with source readiness bits and producer tags.
+- CDB-style broadcast wakes matching dependent operands by tag.
+- Stale-tag protection matters because a younger producer can replace an older producer for the same architectural destination.
+- The ROB separates execution completion from architectural retirement; an instruction may finish early but cannot update architectural state until it reaches the ROB head.
+- Stores are held until commit so wrong-path or not-yet-retired stores do not corrupt memory state.
+- The LSQ model is conservative: it tracks load/store readiness and prevents loads from passing older unresolved stores.
+
+### SMT-Style Thread Tagging Points
+
+- The SMT-style experiment uses two logical thread contexts with per-thread PC and architectural register state.
+- Pipeline metadata carries `thread_id` so writeback, hazards, branch redirect, cache counters, and UCP stream mapping can distinguish threads.
+- Forwarding and dependency checks must compare thread IDs; the same architectural register number in two different threads is not the same dependency.
+- The implementation is intentionally simplified and in-order. It does not claim superscalar SMT scheduling, register renaming, ROB-based SMT commit, or out-of-order SMT.
+
+### Cache And UCP Points
+
+- Private L1 banks model the common idea that nearest caches are often private to a core or thread context.
+- Shared L2/L3-style structures let multiple logical streams interact through lower-level cache capacity.
+- Pseudo-LRU replacement approximates LRU with small state: one bit for 2-way L2 and tree state for 4-way L3.
+- UCP-style partitioning protects shared L3 capacity between streams and can favor the stream with better estimated utility.
+- Dynamic UCP uses monitor/shadow-hit behavior to evaluate allocation usefulness over intervals, then repartitions while preserving legal allocation bounds.
+- The cache/UCP model is simplified: no coherence, no realistic DRAM timing, no multicore ownership protocol, and no production QoS controller.
+
+### Verification Points
+
+- Each phase uses directed tests that check final architectural state, not just trace appearance.
+- Later phases add counter-consistency checks such as `hits + misses = accesses` and allocation-bound checks for cache partitions.
+- Randomized tests are deterministic by seed so failures can be reproduced.
+- Reports are generated as Markdown/CSV to make results inspectable and reusable.
+- VCD output is preserved for waveform-level debug.
+- Yosys synthesis is used as a structural sanity check, not as timing closure or signoff.
+
+### Good Boundaries To Keep Clear
+
+Say:
+
+- open-source RTL experiment
+- product-style top-level interface
+- self-checking simulation flow
+- synthesis sanity with Yosys
+- OOO-style backend concepts
+- SMT-style thread tagging
+- simplified cache/UCP policy experiment
+
+Avoid saying:
+
+- full production CPU
+- full RV32I compliance
+- full UVM environment
+- precise exception support
+- complete physical register renaming
+- complete speculative replay
+- cache-coherent multicore subsystem
+- timing closure or signoff verification
+
+### Concise Resume Bullets
+
+- Built a phased SystemVerilog RV32I RTL project from a single-cycle subset through pipeline, branch prediction, cache/UCP, SMT-style tagging, and OOO-style backend experiments.
+- Designed a product-style final CPU top with instruction/data memory bus ports only, while moving verification visibility into monitor/checker logic.
+- Implemented and validated gshare prediction, ROB/RS/LSQ concepts, conservative memory ordering, pseudo-LRU cache structures, and dynamic UCP-style L3 allocation.
+- Created reproducible Windows-native simulation, lint, synthesis, waveform, and Markdown/CSV reporting flows using OSS CAD Suite tools.

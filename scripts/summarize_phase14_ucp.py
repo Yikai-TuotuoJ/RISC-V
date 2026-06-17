@@ -246,7 +246,7 @@ def write_policy(rows: list[dict[str, str]]) -> None:
     for r in out_rows:
         lines.append(f"| {r['test_name']} | {r['policy_mode']} | {r['stream_id']} | {r['l1_hits']}/{r['l1_misses']} | {r['l2_hits']}/{r['l2_misses']} | {r['l3_hits']}/{r['l3_misses']} | {r['backing_accesses']} | {r['allocated_l3_lines']} | {r['cycles']} | {r['CPI']} | {r['pass_fail']} |")
     lines.extend([
-        "", "## Interview Notes", "",
+        "", "## Design Notes", "",
         "The comparison separates correctness from performance. Every row must first pass architectural checks in the RTL testbench.",
         "Only after correctness is established do the counters show how private L1, shared L2, and partitioned L3 change where hits occur.",
         "The dynamic UCP policy is now the main validation target: it starts from an equal split, monitors L3 behavior, and can repartition at interval boundaries while preserving architectural correctness. The long `dynamic_ucp_long_stream1` benchmark is designed to let dynamic UCP pay back its monitoring/repartition cost after stream 1 becomes the dominant hot set. The fixed utility-guided policy remains only as a comparison point.",
@@ -301,6 +301,7 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 
 

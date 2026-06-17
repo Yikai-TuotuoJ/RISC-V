@@ -114,9 +114,9 @@ Generated outputs:
 
 The testbench checks load allocation, store allocation, LSQ full stalls, address waits, store-data waits, wrong-tag rejection, load waits behind older unresolved stores, store commit through the ROB, load result commit through the ROB, x0 behavior, and unsupported-op handling.
 
-## Interview-Oriented Explanation
+## Design Explanation
 
-A good interview framing is:
+A good Design Framing is:
 
 > I had already built Tomasulo-style reservation station and ROB experiments, but ALU scheduling alone does not solve memory ordering. Phase 19 adds a limited LSQ model that separates memory uops from ALU uops, tracks address readiness and store-data readiness, and forces loads to wait behind older unresolved stores. Stores update memory only at ROB commit, which avoids speculative memory side effects. This demonstrates why real OOO processors need LSQs, memory disambiguation, forwarding, and replay logic, while clearly stopping short of claiming a full production OOO memory subsystem.
 
@@ -143,3 +143,4 @@ This phase does not implement:
 - cache/UCP integration for speculative memory requests
 
 Future work can connect this LSQ concept to the cache hierarchy and add cautious store-to-load forwarding or memory-disambiguation experiments.
+

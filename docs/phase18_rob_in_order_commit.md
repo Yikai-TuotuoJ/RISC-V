@@ -156,7 +156,7 @@ The directed suite validates:
 - thread-aware register independence
 - report and counter consistency
 
-## Interview-Oriented Explanation
+## Design Explanation
 
 The strongest way to explain this phase is:
 
@@ -195,3 +195,4 @@ Phase 19 should add a limited load/store queue preparation experiment:
 - keep memory ordering conservative
 - demonstrate why memory disambiguation is needed
 - do not implement full speculative memory execution yet
+

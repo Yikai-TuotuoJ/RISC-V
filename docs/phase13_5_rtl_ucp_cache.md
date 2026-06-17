@@ -104,7 +104,7 @@ Outputs:
 - `reports/sim/ucp_rtl_trace.log`
 - `sim/phase13_5_ucp_cache.vcd`
 
-## Interview Notes
+## Design Notes
 
 The important story is not that this is a complete UCP implementation. The important story is that the design separates cache levels by role:
 
@@ -122,3 +122,4 @@ The `utility_pressure` benchmark demonstrates why partitioning can matter: a hot
 - No runtime utility monitor or dynamic repartition interval.
 - Direct-mapped, one-word-line educational cache model.
 - Fixed quotas only: equal vs utility-guided.
+

@@ -1,33 +1,39 @@
-﻿# RISC-V RTL Project
+# RISC-V RTL Project
 
 Windows-native open-source RISC-V RTL project for front-end SoC practice.
 
 This repository starts with a minimal RV32I single-cycle CPU subset and is growing into a resume-level CPU project with simulation, lint, synthesis sanity checks, waveform debug, and documentation. Source RTL and testbenches now use open-source-tool-compatible SystemVerilog.
 
-## Current Phase
+## Current Progress
 
-- Phase 0: Windows-native repository and tool workflow.
-- Phase 1: Minimal single-cycle RV32I subset CPU.
-- Phase 2: Single-cycle memory and branch support.
-- Phase 3: Single-cycle jump and upper-immediate support.
-- Phase 4: Baseline 5-stage pipelined CPU, with the single-cycle core preserved as a reference.
-- Phase 5: Pipeline trace logging, stronger directed checks, and deterministic randomized hazard-free tests.
-- Phase 6: 1-bit conditional branch prediction baseline with counters, trace logging, and directed branch predictor tests.
-- Phase 7: Gshare predictor with a 4-bit global history register, 16-entry 2-bit PHT, and same-program comparison against the simple predictor.
-- Phase 8: Open-source Yosys synthesis reports comparing single-cycle, pipeline, and gshare pipeline wrappers.
-- Phase 9: Simulation-level performance counters and microbenchmark-style CPI/branch reporting.
-- Phase 10: Configurable data-memory latency, conservative RAW interlock stalls, and memory-latency benchmark reports.
-- Phase 10.5: SystemVerilog source migration, `.sv` file convention, and future coding standard.
-- Phase 11: Small direct-mapped D-cache experiment with hit/miss counters and cache benchmark reports.
-- Phase 12: Simplified L1/L2-style D-cache hierarchy experiment with per-level reports.
-- Phase 13: Simplified UCP-style shared-cache partitioning trace model with equal vs utility-guided policy reports.
-- Phase 13.5: Pipeline-integrated RTL experiment with private logical L1 banks, shared L2, and UCP-partitioned L3.
-- Phase 14: Active UCP validation and dynamic UCP stress/reporting.
-- Phase 15: Separate SMT-style thread-tagged in-order pipeline experiment.
-- Phase 16: Standalone scoreboard and reservation-station preparation layer.
-- Phase 17: Standalone Tomasulo-style dynamic scheduling experiment with reservation stations, tags, and CDB-style wakeup.
-- Phase 18: Constrained ROB / in-order commit experiment separating broadcast completion from architectural retirement.
+This repository has grown from a minimal single-cycle RV32I subset into a Windows-native SystemVerilog CPU architecture portfolio project. The earlier cores remain available as references, while the latest work adds a product-style final integrated target.
 
+Completed phase highlights:
+
+- Phase 0-3: Windows-native setup plus single-cycle RV32I subset through memory, branches, jumps, and upper-immediate instructions.
+- Phase 4-7: Five-stage pipeline baseline, trace logging, branch prediction baseline, and gshare predictor.
+- Phase 8-10: Yosys synthesis reporting, simulation-level performance counters, and configurable memory-latency experiments.
+- Phase 10.5: SystemVerilog migration and coding-standard documentation.
+- Phase 11-14: Direct-mapped cache, simplified L1/L2 hierarchy, private-L1/shared-L2/UCP-L3 experiments, dynamic UCP, and active cache/UCP validation.
+- Phase 15: Separate SMT-style two-thread in-order pipeline experiment with thread-aware hazards and cache/UCP stream mapping.
+- Phase 16-20: Standalone scoreboard, Tomasulo-style scheduling, ROB, LSQ, and integrated OOO-concept experiments.
+- Phase 21: Final product-like integrated CPU top with product memory-bus ports only, UVM-inspired OSS-compatible monitors, gshare, SMT-style thread metadata, ROB/RS/LSQ concepts, private L1 banks, shared pseudo-LRU L2/L3 structures, and dynamic UCP-style reporting.
+
+Current primary target:
+
+```text
+rtl/rv32i_final_cpu_top.sv
+```
+
+Current primary validation:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_final_cpu_tests.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\run_final_cpu_lint.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\run_final_cpu_synth.ps1
+```
+
+The latest final CPU validation runs 96 self-checking tests, preserves Phase 20 and Phase 15 reference regressions through the final runner, generates trace/waveform/report artifacts, passes Verilator lint, and passes Yosys synthesis sanity.
 ## Supported Instructions
 
 The current single-cycle reference core and Phase 4 pipeline baseline support:
@@ -47,7 +53,7 @@ The current single-cycle reference core and Phase 4 pipeline baseline support:
 - LUI
 - AUIPC
 
-Not included yet: full RV32I coverage, CSR, exceptions, interrupts, forwarding, I-cache, production cache hierarchy, UVM, SMT, multicore coherence, or formal verification. Phase 11 includes a small direct-mapped D-cache experiment, not a full cache hierarchy. The pipeline now has a conservative RAW interlock and memory-wait stalls, but not bypass forwarding.
+Still intentionally out of scope: full RV32I compliance, CSR, exceptions, interrupts, cache coherence, realistic DRAM, full industrial UVM, production SMT scheduling, production out-of-order execution, precise exception recovery, physical-design signoff, and formal verification. The advanced cores are educational SystemVerilog experiments with self-checking simulation, lint, and synthesis sanity flows.
 
 ## Toolchain
 
@@ -295,7 +301,7 @@ dynamic UCP:      cycles=462 L3 hits=21 backing accesses=15 final alloc=3/5
 fixed 6/2 policy: cycles=582 L3 hits=6  backing accesses=30
 ```
 
-This is the right interview framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
+This is the right Design Framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
 
 ## Phase 15 SMT-Style Thread Tagging
 
@@ -453,3 +459,6 @@ powershell -ExecutionPolicy Bypass -File .\scripts\run_final_cpu_synth.ps1
 ```
 
 This remains an educational open-source RTL integration, not a production OOO processor or full UVM environment.
+
+
+

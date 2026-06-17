@@ -51,9 +51,10 @@ Policy mapping:
 | utility_pressure | mode4_dynamic_ucp | 0 | 0/9 | 0/13 | 1/8 | 12 | 3 | 221 | 8.500 | PASS |
 | utility_pressure | mode4_dynamic_ucp | 1 | 0/4 | 0/13 | 0/4 | 12 | 5 | 221 | 8.500 | PASS |
 
-## Interview Notes
+## Design Notes
 
 The comparison separates correctness from performance. Every row must first pass architectural checks in the RTL testbench.
 Only after correctness is established do the counters show how private L1, shared L2, and partitioned L3 change where hits occur.
 The dynamic UCP policy is now the main validation target: it starts from an equal split, monitors L3 behavior, and can repartition at interval boundaries while preserving architectural correctness. The long `dynamic_ucp_long_stream1` benchmark is designed to let dynamic UCP pay back its monitoring/repartition cost after stream 1 becomes the dominant hot set. The fixed utility-guided policy remains only as a comparison point.
 This remains a simplified single-pipeline experiment with address-derived streams, not real multicore UCP or cache coherence.
+

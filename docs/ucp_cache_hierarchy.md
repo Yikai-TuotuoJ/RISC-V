@@ -62,4 +62,5 @@ dynamic UCP:      cycles=462 L3 hits=21 backing accesses=15 final alloc=3/5
 fixed 6/2 policy: cycles=582 L3 hits=6  backing accesses=30
 ```
 
-This is the right interview framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
+This is the right Design Framing: dynamic UCP has overhead and may not win on short programs, but on a longer phase-changing workload it can adapt and outperform a static equal split or a fixed allocation biased toward the wrong stream.
+

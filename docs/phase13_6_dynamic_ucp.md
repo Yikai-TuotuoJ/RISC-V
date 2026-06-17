@@ -79,7 +79,7 @@ The important Phase 13.6 result is that dynamic repartitioning is now real RTL b
 - architectural correctness is preserved
 - reports include dynamic repartition count and final active allocation
 
-## Interview Notes
+## Design Notes
 
 Do not describe this as production UCP. Say:
 
@@ -104,3 +104,4 @@ Important details to explain:
 - no multicore or SMT execution
 - full L3 invalidation on repartition
 - short tests may show worse CPI even when allocation changes correctly
+

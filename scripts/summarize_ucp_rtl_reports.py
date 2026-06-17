@@ -83,7 +83,7 @@ def write_md(rows: list[dict[str, str]]) -> None:
                 backing=row.get("backing_mem_accesses", ""), reparts=row.get("dynamic_repartitions", ""),
             )
         )
-    lines.extend(["", "## Interview-Oriented Analysis", ""])
+    lines.extend(["", "## Design Analysis", ""])
     pressure_equal = next((r for r in rows if r.get("benchmark") == "utility_pressure" and r.get("policy") == "0"), None)
     pressure_utility = next((r for r in rows if r.get("benchmark") == "utility_pressure" and r.get("policy") == "1"), None)
     if pressure_equal and pressure_utility:
@@ -124,3 +124,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
